@@ -1,6 +1,7 @@
 #include<iostream>
 #include "countPrimes.h"
 #include "isHappy.h"
+#include "hammingWeight.h"
 using namespace std;
 
 
@@ -10,8 +11,8 @@ using namespace std;
 
 int main()
 {
-	Solution2 solution;
-	int temp = solution.isHappy(19);
+	Solution3 solution;
+	int temp = solution.hammingWeight(12);
 	cout << temp ;
 	return 0;
 }

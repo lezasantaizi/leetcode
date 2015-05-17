@@ -65,11 +65,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="countPrimes.cpp" />
+    <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h" />
+    <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isHappy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
