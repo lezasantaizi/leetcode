@@ -17,18 +17,36 @@ int discloseNumber(int n)
 bool Solution2::isHappy(int n)
 {
 
-	int temp = discloseNumber(n);
-	while(temp != 1 && temp != 4)
+	//int temp = discloseNumber(n);
+	//while(temp != 1 && temp != 4)
+	//{
+	//	temp = discloseNumber(temp);
+	//}
+	//if(temp == 4)
+	//{
+	//	return 0;
+	//}
+	//else
+	//{
+	//	return 1;
+	//}
+
+	while(n != 1 && n!= 4)
 	{
-		temp = discloseNumber(temp);
+		int next_n = 0;
+		while(n > 0)
+		{
+			int k = n % 10;
+			next_n += k*k;
+			n /= 10;
+		}
+		n = next_n;
+		printf("%d\n",n);
 	}
-	if(temp == 4)
-	{
-		return 0;
-	}
+
+	if (n == 1)
+		return true;
 	else
-	{
-		return 1;
-	}
+		return false;
 
 }
