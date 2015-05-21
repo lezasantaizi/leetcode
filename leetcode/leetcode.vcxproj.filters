@@ -48,6 +48,9 @@
     <ClCompile Include="convertToTitle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="titleToNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -78,6 +81,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="convertToTitle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="titleToNumber.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

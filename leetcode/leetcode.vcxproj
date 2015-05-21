@@ -74,6 +74,7 @@
     <ClCompile Include="reverseBits.cpp" />
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="rotate.cpp" />
+    <ClCompile Include="titleToNumber.cpp" />
     <ClCompile Include="trailingZeroes.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +87,7 @@
     <ClInclude Include="reverseBits.h" />
     <ClInclude Include="rob.h" />
     <ClInclude Include="rotate.h" />
+    <ClInclude Include="titleToNumber.h" />
     <ClInclude Include="trailingZeroes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
