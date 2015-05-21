@@ -68,6 +68,7 @@
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="reverseBits.cpp" />
     <ClCompile Include="rob.cpp" />
@@ -77,6 +78,7 @@
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isHappy.h" />
+    <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="reverse.h" />
     <ClInclude Include="reverseBits.h" />
     <ClInclude Include="rob.h" />
