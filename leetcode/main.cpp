@@ -8,16 +8,17 @@
 #include"reverseBits.h"
 #include"rotate.h"
 #include"permuteUnique.h"
+#include"trailingZeroes.h"
 using namespace std;
 
 
 int main()
 {
-	Solution8 solution;
+	Solution9 solution;
 	vector<int> temp = { 1, 3, 1 };
-	vector<vector<int>> result;
-	result = solution.permuteUnique(temp);
-	//cout << temp ;
+	int result;
+	result = solution.trailingZeroes(10);
+	cout << result;
 	return 0;
 }
 
