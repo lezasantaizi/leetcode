@@ -64,6 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="convertToTitle.cpp" />
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isHappy.cpp" />
@@ -76,6 +77,7 @@
     <ClCompile Include="trailingZeroes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="convertToTitle.h" />
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isHappy.h" />
