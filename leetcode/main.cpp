@@ -11,14 +11,15 @@
 #include"trailingZeroes.h"
 #include"convertToTitle.h"
 #include"titleToNumber.h"
+#include"majorityElement.h"
 using namespace std;
 
 int main()
 {
-	Solution11 solution;
+	Solution12 solution;
 	vector<int> temp = { 1, 3, 1 };
 	int result;
-	result = solution.titleToNumber("AB");
+	result = solution.majorityElement(temp);
 	//cout << result;
 	//char* temp2 = convertToTitle(28);
 	return 0;
