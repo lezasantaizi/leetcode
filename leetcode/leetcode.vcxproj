@@ -64,6 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="convertToTitle.cpp" />
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
@@ -79,6 +80,7 @@
     <ClCompile Include="trailingZeroes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="compareVersion.h" />
     <ClInclude Include="convertToTitle.h" />
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="hammingWeight.h" />

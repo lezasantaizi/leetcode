@@ -54,6 +54,9 @@
     <ClCompile Include="majorityElement.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="compareVersion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -90,6 +93,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="majorityElement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="compareVersion.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
