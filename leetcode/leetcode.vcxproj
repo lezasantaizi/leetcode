@@ -69,6 +69,7 @@
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isHappy.cpp" />
+    <ClCompile Include="isIsomorphic.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
@@ -85,6 +86,7 @@
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isHappy.h" />
+    <ClInclude Include="isIsomorphic.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="reverse.h" />
