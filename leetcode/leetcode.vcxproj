@@ -67,9 +67,11 @@
     <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="convertToTitle.cpp" />
     <ClCompile Include="countPrimes.cpp" />
+    <ClCompile Include="getIntersectionNode.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="isIsomorphic.cpp" />
+    <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
@@ -84,9 +86,11 @@
     <ClInclude Include="compareVersion.h" />
     <ClInclude Include="convertToTitle.h" />
     <ClInclude Include="countPrimes.h" />
+    <ClInclude Include="getIntersectionNode.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isIsomorphic.h" />
+    <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="reverse.h" />
