@@ -75,6 +75,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
+    <ClCompile Include="plusOne.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="reverseBits.cpp" />
     <ClCompile Include="rob.cpp" />
@@ -93,6 +94,7 @@
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="permuteUnique.h" />
+    <ClInclude Include="plusOne.h" />
     <ClInclude Include="reverse.h" />
     <ClInclude Include="reverseBits.h" />
     <ClInclude Include="rob.h" />
