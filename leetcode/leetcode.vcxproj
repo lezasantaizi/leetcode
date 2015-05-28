@@ -72,6 +72,7 @@
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="isIsomorphic.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
+    <ClCompile Include="lengthOfLastWord.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
@@ -92,6 +93,7 @@
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isIsomorphic.h" />
     <ClInclude Include="isSymmetric.h" />
+    <ClInclude Include="lengthOfLastWord.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />

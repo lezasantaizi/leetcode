@@ -17,47 +17,73 @@
 #include"isSymmetric.h"
 #include"getIntersectionNode.h"
 #include"plusOne.h"
+#include"lengthOfLastWord.h"
 using namespace std;
 
 
-int* plusOne(int* digits, int digitsSize, int* returnSize) {
-	int* temp = (int*)malloc(sizeof(int)*(digitsSize + 1));
-	memcpy(temp, digits, sizeof(int)*digitsSize);
-	int n = digitsSize;
-	while (n)
+//int* plusOne(int* digits, int digitsSize, int* returnSize) {
+//	int* temp = (int*)malloc(sizeof(int)*(digitsSize + 1));
+//	memcpy(temp, digits, sizeof(int)*digitsSize);
+//	int n = digitsSize;
+//	while (n)
+//	{
+//		if (digits[n - 1] < 9)
+//		{
+//			temp[n-1] = digits[n - 1] + 1;
+//			break;
+//		}
+//		else
+//		{
+//			temp[n-1] = 0;
+//		}
+//		n--;
+//	}
+//	if (n == 0 && temp[0] == 0)
+//	{
+//		temp[0] = 1;
+//		temp[digitsSize] = 0;
+//		*returnSize = digitsSize + 1;
+//	}
+//	else
+//	{
+//		*returnSize = digitsSize;
+//	}
+//	
+//	return temp;
+//}
+
+
+int lengthOfLastWord(char* s) {
+	if (s[0] == '\0')
+		return 0;
+	int sLen = 0;
+	while (s[sLen++] != '\0')
+		;
+	sLen = sLen - 1;
+	int lastWordLen = 0;
+	while (sLen >= 1 && s[sLen - 1] == ' ')
+		sLen--;
+	for (int i = sLen - 1; i >= 0; i--)
 	{
-		if (digits[n - 1] < 9)
+		if (s[i] != ' ')
 		{
-			temp[n-1] = digits[n - 1] + 1;
-			break;
+			lastWordLen++;
 		}
 		else
-		{
-			temp[n-1] = 0;
-		}
-		n--;
-	}
-	if (n == 0 && temp[0] == 0)
-	{
-		temp[0] = 1;
-		temp[digitsSize] = 0;
-		*returnSize = digitsSize + 1;
-	}
-	else
-	{
-		*returnSize = digitsSize;
-	}
-	
-	return temp;
-}
+			break;
 
+	}
+	return lastWordLen;
+}
 int main()
 {
-	Solution17 solution;
+	Solution18 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	int temp[1] = { 0 };
-	int returnSize = 0;
-	int* temp2= plusOne(temp, 1, &returnSize);
+	//int returnSize = 0;
+	//int* temp2= plusOne(temp, 1, &returnSize);
+	//int result = solution.lengthOfLastWord("  ");
+	int result = lengthOfLastWord(" ");
 	//vector<int> result = solution.plusOne(temp);
 	//int result;
 	//result = solution.compareVersion("1.0","1");
