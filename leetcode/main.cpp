@@ -77,7 +77,7 @@ int lengthOfLastWord(char* s) {
 }
 int main()
 {
-	Solution18 solution;
+	Solution15 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	int temp[1] = { 0 };
 	//int returnSize = 0;
@@ -91,7 +91,20 @@ int main()
 	//result = isIsomorphic("ab", "aa");
 	//cout << result;
 	//char* temp2 = convertToTitle(28);
+	TreeNode node1(1);
+	TreeNode node2(2);
+	TreeNode node3(3);
+	TreeNode node4(4);
+	TreeNode node5(5);
+	node1.left = &node2;
+	node1.right = &node3;
+	node2.left = &node4;
+	node2.right = NULL;
+	node3.left = NULL;
+	node3.right = &node5;
 
+
+	result = solution.isSymmetric(&node1);
 	//ListNode node1(11);
 	//ListNode node2(12);
 	//ListNode node3(31);
