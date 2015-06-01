@@ -22,60 +22,28 @@
 using namespace std;
 
 
-//int* plusOne(int* digits, int digitsSize, int* returnSize) {
-//	int* temp = (int*)malloc(sizeof(int)*(digitsSize + 1));
-//	memcpy(temp, digits, sizeof(int)*digitsSize);
-//	int n = digitsSize;
-//	while (n)
-//	{
-//		if (digits[n - 1] < 9)
-//		{
-//			temp[n-1] = digits[n - 1] + 1;
-//			break;
-//		}
-//		else
-//		{
-//			temp[n-1] = 0;
-//		}
-//		n--;
-//	}
-//	if (n == 0 && temp[0] == 0)
-//	{
-//		temp[0] = 1;
-//		temp[digitsSize] = 0;
-//		*returnSize = digitsSize + 1;
-//	}
-//	else
-//	{
-//		*returnSize = digitsSize;
-//	}
-//	
-//	return temp;
-//}
-
-
-int lengthOfLastWord(char* s) {
-	if (s[0] == '\0')
-		return 0;
-	int sLen = 0;
-	while (s[sLen++] != '\0')
-		;
-	sLen = sLen - 1;
-	int lastWordLen = 0;
-	while (sLen >= 1 && s[sLen - 1] == ' ')
-		sLen--;
-	for (int i = sLen - 1; i >= 0; i--)
+struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
+	struct ListNode* head1,*head2;
+	head1 = head;
+	head2 = head;
+	for(int i = 0;i < n; i++)
 	{
-		if (s[i] != ' ')
-		{
-			lastWordLen++;
-		}
-		else
-			break;
-
+		head1 = head1->next;
 	}
-	return lastWordLen;
+	if (head1 == NULL)
+	{
+		return head->next;
+	}
+	while (head1->next)
+	{
+		head1 = head1->next;
+		head2 = head2->next;
+	}
+	head2->next = head2->next->next;
+	return head;
+
 }
+
 int main()
 {
 	Solution19 solution;
@@ -100,14 +68,14 @@ int main()
 	ListNode node6(21);
 	ListNode node7(22);
 	ListNode node8(23);
-	  //node
+	  //node1 -> node2->node3->node4->node5
 	node1.next = &node2;
 	node2.next = &node3;
 	node3.next = &node4;
 	node4.next = &node5;
 	node5.next = NULL;
 
-	solution.removeNthFromEnd(&node1,2);
+	ListNode* result = removeNthFromEnd(&node1,1);
 	return 0;
 }
 
