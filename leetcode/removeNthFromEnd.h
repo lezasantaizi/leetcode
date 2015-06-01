@@ -10,7 +10,5 @@ struct ListNode {
 
 class Solution19 {
 public:
-	ListNode* removeNthFromEnd(ListNode* head, int n) {
-
-	}
+	ListNode* removeNthFromEnd(ListNode* head, int n);
 };

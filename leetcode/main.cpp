@@ -1,23 +1,24 @@
 #include<iostream>
 
-#include "countPrimes.h"
-#include "isHappy.h"
-#include "hammingWeight.h"
-#include "rob.h"
-#include"reverse.h"
-#include"reverseBits.h"
-#include"rotate.h"
-#include"permuteUnique.h"
-#include"trailingZeroes.h"
-#include"convertToTitle.h"
-#include"titleToNumber.h"
-#include"majorityElement.h"
-#include"compareVersion.h"
-#include"isIsomorphic.h"
-#include"isSymmetric.h"
-#include"getIntersectionNode.h"
-#include"plusOne.h"
-#include"lengthOfLastWord.h"
+//#include "countPrimes.h"
+//#include "isHappy.h"
+//#include "hammingWeight.h"
+//#include "rob.h"
+//#include"reverse.h"
+//#include"reverseBits.h"
+//#include"rotate.h"
+//#include"permuteUnique.h"
+//#include"trailingZeroes.h"
+//#include"convertToTitle.h"
+//#include"titleToNumber.h"
+//#include"majorityElement.h"
+//#include"compareVersion.h"
+//#include"isIsomorphic.h"
+//#include"isSymmetric.h"
+//#include"getIntersectionNode.h"
+//#include"plusOne.h"
+//#include"lengthOfLastWord.h"
+#include"removeNthFromEnd.h"
 using namespace std;
 
 
@@ -77,58 +78,36 @@ int lengthOfLastWord(char* s) {
 }
 int main()
 {
-	Solution15 solution;
+	Solution19 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	int temp[1] = { 0 };
 	//int returnSize = 0;
 	//int* temp2= plusOne(temp, 1, &returnSize);
 	//int result = solution.lengthOfLastWord("  ");
-	int result = lengthOfLastWord(" ");
+	//int result = lengthOfLastWord(" ");
 	//vector<int> result = solution.plusOne(temp);
 	//int result;
 	//result = solution.compareVersion("1.0","1");
-	//result =  solution.isIsomorphic("ab", "aa");
-	//result = isIsomorphic("ab", "aa");
-	//cout << result;
-	//char* temp2 = convertToTitle(28);
-	TreeNode node1(1);
-	TreeNode node2(2);
-	TreeNode node3(3);
-	TreeNode node4(4);
-	TreeNode node5(5);
-	node1.left = &node2;
-	node1.right = &node3;
-	node2.left = &node4;
-	node2.right = NULL;
-	node3.left = NULL;
-	node3.right = &node5;
 
 
-	result = solution.isSymmetric(&node1);
-	//ListNode node1(11);
-	//ListNode node2(12);
-	//ListNode node3(31);
-	//ListNode node4(32);
-	//ListNode node5(33);
-	//ListNode node6(21);
-	//ListNode node7(22);
-	//ListNode node8(23);
 
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node5;
-	//node5.next = NULL;
-	//node6.next = &node7;
-	//node7.next = &node8;
-	//node8.next = &node3;
+	//result = solution.isSymmetric(&node1);
+	ListNode node1(11);
+	ListNode node2(12);
+	ListNode node3(31);
+	ListNode node4(32);
+	ListNode node5(33);
+	ListNode node6(21);
+	ListNode node7(22);
+	ListNode node8(23);
+	  //node
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = NULL;
 
-
-	//ListNode *head1 = &node1;
-	//ListNode *head2 = &node6;
-	////ListNode *result = solution.getIntersectionNode(head1, head2);
-	//ListNode *result = NULL;
-	//result = solution.getIntersectionNode(head1, head2);
+	solution.removeNthFromEnd(&node1,2);
 	return 0;
 }
 

@@ -2,5 +2,5 @@
 
 ListNode* Solution19::removeNthFromEnd(ListNode* head, int n) 
 {
-
+	return NULL;
 }
