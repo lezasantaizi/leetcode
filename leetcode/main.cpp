@@ -18,7 +18,8 @@
 //#include"getIntersectionNode.h"
 //#include"plusOne.h"
 //#include"lengthOfLastWord.h"
-#include"removeNthFromEnd.h"
+//#include"removeNthFromEnd.h"
+#include"removeElements.h"
 using namespace std;
 
 
@@ -46,7 +47,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
 
 int main()
 {
-	Solution19 solution;
+	Solution20 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	int temp[1] = { 0 };
 	//int returnSize = 0;
@@ -61,7 +62,7 @@ int main()
 
 	//result = solution.isSymmetric(&node1);
 	ListNode node1(11);
-	ListNode node2(12);
+	ListNode node2(11);
 	ListNode node3(31);
 	ListNode node4(32);
 	ListNode node5(33);
@@ -69,13 +70,13 @@ int main()
 	ListNode node7(22);
 	ListNode node8(23);
 	  //node1 -> node2->node3->node4->node5
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = &node4;
-	node4.next = &node5;
-	node5.next = NULL;
-
-	ListNode* result = removeNthFromEnd(&node1,1);
+	node1.next = NULL;
+	//node2.next = &node3;
+	//node3.next = &node4;
+	//node4.next = &node5;
+	node2.next = NULL;
+	ListNode* result = solution.removeElements(&node1,2);
+	//ListNode* result = removeNthFromEnd(&node1,1);
 	return 0;
 }
 
