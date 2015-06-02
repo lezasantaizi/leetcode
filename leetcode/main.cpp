@@ -21,15 +21,21 @@
 //#include"removeNthFromEnd.h"
 //#include"removeElements.h"
 #include"convert.h"
+#include"reverseList.h"
 using namespace std;
 
 
 int main()
 {
-	Solution21 solution;
+	Solution22 solution;
 	//vector<int> temp = { 9, 9, 9 };
-	int temp[1] = { 0 };
-	string result = solution.convert("PAYPALISHIRING", 3);
+	ListNode node1(1);
+	ListNode node2(2);
+	node1.next = &node2;
+	node2.next = NULL;
+	ListNode* result = solution.reverseList(&node1);
+	//int temp[1] = { 0 };
+	//string result = solution.convert("PAYPALISHIRING", 3);
 	//ListNode* result = removeNthFromEnd(&node1,1);
 	return 0;
 }

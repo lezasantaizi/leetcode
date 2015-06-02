@@ -82,6 +82,7 @@
     <ClCompile Include="removeNthFromEnd.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="reverseBits.cpp" />
+    <ClCompile Include="reverseList.cpp" />
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="rotate.cpp" />
     <ClCompile Include="titleToNumber.cpp" />
@@ -105,6 +106,7 @@
     <ClInclude Include="removeNthFromEnd.h" />
     <ClInclude Include="reverse.h" />
     <ClInclude Include="reverseBits.h" />
+    <ClInclude Include="reverseList.h" />
     <ClInclude Include="rob.h" />
     <ClInclude Include="rotate.h" />
     <ClInclude Include="titleToNumber.h" />
