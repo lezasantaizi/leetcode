@@ -2,10 +2,8 @@
 
 ListNode* Solution22::reverseList(ListNode* head)
 {
-	if (head == NULL)
-		return NULL;
-	ListNode* head1 = head;
-	ListNode* head2 = head->next;
+	ListNode* head1 = NULL;
+	ListNode* head2 = head;
 	while (head2)
 	{
 		ListNode* temp = head2->next;
@@ -13,6 +11,5 @@ ListNode* Solution22::reverseList(ListNode* head)
 		head1 = head2;
 		head2 = temp;
 	}
-	head->next = NULL;
 	return head1;
 }
