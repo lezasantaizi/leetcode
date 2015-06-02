@@ -78,6 +78,9 @@
     <ClCompile Include="removeElements.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -138,6 +141,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="removeElements.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="convert.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
