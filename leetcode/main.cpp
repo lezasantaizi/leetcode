@@ -20,15 +20,16 @@
 //#include"lengthOfLastWord.h"
 //#include"removeNthFromEnd.h"
 //#include"removeElements.h"
-#include"convert.h"
-#include"reverseList.h"
-#include"containsDuplicate.h"
+//#include"convert.h"
+//#include"reverseList.h"
+//#include"containsDuplicate.h"
+#include "mergeTwoLists.h"
 using namespace std;
 
 
 int main()
 {
-	Solution23 solution;
+	Solution24 solution;
 	vector<int> temp ;
 	temp.push_back(9);
 	temp.push_back(8);
@@ -37,7 +38,7 @@ int main()
 	node1.next = &node2;
 	node2.next = NULL;
 	//ListNode* result = solution.reverseList(&node1);
-	bool result = solution.containsDuplicate(temp);
+	//bool result = solution.containsDuplicate(temp);
 	//int temp[1] = { 0 };
 	//string result = solution.convert("PAYPALISHIRING", 3);
 	//ListNode* result = removeNthFromEnd(&node1,1);
