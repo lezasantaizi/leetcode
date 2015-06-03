@@ -22,18 +22,22 @@
 //#include"removeElements.h"
 #include"convert.h"
 #include"reverseList.h"
+#include"containsDuplicate.h"
 using namespace std;
 
 
 int main()
 {
-	Solution22 solution;
-	//vector<int> temp = { 9, 9, 9 };
+	Solution23 solution;
+	vector<int> temp ;
+	temp.push_back(9);
+	temp.push_back(8);
 	ListNode node1(1);
 	ListNode node2(2);
 	node1.next = &node2;
 	node2.next = NULL;
-	ListNode* result = solution.reverseList(&node1);
+	//ListNode* result = solution.reverseList(&node1);
+	bool result = solution.containsDuplicate(temp);
 	//int temp[1] = { 0 };
 	//string result = solution.convert("PAYPALISHIRING", 3);
 	//ListNode* result = removeNthFromEnd(&node1,1);
