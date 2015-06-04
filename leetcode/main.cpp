@@ -58,7 +58,7 @@ int myAtoi(char* str) {
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			if (num > 214748364 || (num == 214748364 && flag == 0 && (str[i] - '0') >7) || (num == 214748364 && flag == 1 && (str[i] - '0') >8))
+			if (num > 214748364 || (num == 214748364 && flag == 0 && (str[i] - '0') > 7) || (num == 214748364 && flag == 1 && (str[i] - '0') > 8))
 			{
 				if (flag == 1)
 					return -2147483648;
@@ -68,7 +68,7 @@ int myAtoi(char* str) {
 			num = num * 10 + str[i] - '0';
 		}
 		else
-			return 0;
+			break;
 	}
 	if (flag == 1)
 	{

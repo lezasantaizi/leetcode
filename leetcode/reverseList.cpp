@@ -1,15 +1,14 @@
 #include"reverseList.h"
 
+
 ListNode* Solution22::reverseList(ListNode* head)
 {
-	ListNode* head1 = NULL;
-	ListNode* head2 = head;
-	while (head2)
+	if (head == NULL || head->next == NULL)
 	{
-		ListNode* temp = head2->next;
-		head2->next = head1;
-		head1 = head2;
-		head2 = temp;
+		return head;
 	}
-	return head1;
+	ListNode* temp = reverseList(head->next);
+	head->next->next = head;
+	head->next = NULL;
+	return temp;
 }
