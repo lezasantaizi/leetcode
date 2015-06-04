@@ -76,6 +76,7 @@
     <ClCompile Include="lengthOfLastWord.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
+    <ClCompile Include="myAtoi.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
     <ClCompile Include="removeElements.cpp" />
@@ -100,6 +101,7 @@
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="lengthOfLastWord.h" />
     <ClInclude Include="majorityElement.h" />
+    <ClInclude Include="myAtoi.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
     <ClInclude Include="removeElements.h" />
