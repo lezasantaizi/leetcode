@@ -24,6 +24,7 @@
 #include"reverseList.h"
 #include"myAtoi.h"
 #include"addBinary.h"
+#include"climbStairs.h"
 using namespace std;
 
 char* addBinary(char* a, char* b)
@@ -68,17 +69,37 @@ char* addBinary(char* a, char* b)
 	return result + 1;
 }
 
+int climbStairs(int n) {
+	//if (n == 0)
+	//	return 1;
+	//if (n == 1)
+	//	return 1;
+	//return climbStairs(n - 1) + climbStairs(n - 2);
+	int a = 0;
+	int b = 1;
+
+	for (int i = 0; i < n; i++)
+	{
+		int sum = a + b;
+		a = b;
+		b = sum;
+	}
+	return b;
+}
+
 int main()
 {
-	Solution24 solution;
+	Solution25 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	ListNode node1(1);
 	ListNode node2(2);
 	node1.next = &node2;
 	node2.next = NULL;
+	int result = solution.climbStairs(4);
 	//int temp = myAtoi("  -0012a42");
 	//string str = solution.addBinary("11","1110");
-	char* temp = addBinary("11", "1");
+	//char* temp = addBinary("11", "1");
+	//int result = climbStairs(4);
 	//int temp = solution.myAtoi(" + 2 2 1");		   
 	//ListNode* result = solution.reverseList(&node1);
 	//int temp[1] = { 0 };

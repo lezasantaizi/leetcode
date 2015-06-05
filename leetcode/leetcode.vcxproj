@@ -65,6 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="addBinary.cpp" />
+    <ClCompile Include="climbStairs.cpp" />
     <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="containsDuplicate.cpp" />
     <ClCompile Include="convert.cpp" />
@@ -93,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addBinary.h" />
+    <ClInclude Include="climbStairs.h" />
     <ClInclude Include="compareVersion.h" />
     <ClInclude Include="containsDuplicate.h" />
     <ClInclude Include="convert.h" />

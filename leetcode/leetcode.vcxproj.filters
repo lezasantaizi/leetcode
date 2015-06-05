@@ -93,6 +93,9 @@
     <ClCompile Include="addBinary.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="climbStairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -168,6 +171,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="addBinary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="climbStairs.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
