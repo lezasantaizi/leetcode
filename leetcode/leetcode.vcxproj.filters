@@ -87,6 +87,12 @@
     <ClCompile Include="myAtoi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="containsDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="addBinary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -156,6 +162,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="myAtoi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="containsDuplicate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="addBinary.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

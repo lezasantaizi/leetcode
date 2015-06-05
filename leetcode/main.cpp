@@ -23,70 +23,62 @@
 #include"convert.h"
 #include"reverseList.h"
 #include"myAtoi.h"
+#include"addBinary.h"
 using namespace std;
 
+char* addBinary(char* a, char* b)
+{
 
-int myAtoi(char* str) {
+	int aLen = 0;
+	int bLen = 0;
+	while (a[aLen++]);
+	while (b[bLen++]);
+	aLen = aLen - 1;
+	bLen = bLen - 1;
+	int bigLen = aLen < bLen ? bLen : aLen;
+	int carry = 0;
+	char* result = (char*)malloc(bigLen + 2);
 
-	int iter = 0;
-	while (str[iter] != '\0')
+	result[bigLen+1] = 0;
+	
+	//string result = "";
+	for (int i = 0; i < bigLen; i++)
 	{
-		iter++;
-	}
-	int strLen = iter;
-	int num = 0;
-	int flag = 0;
-	int index = 0;
-
-	while (index < strLen && str[index] == ' ')
-	{
-		index++;
-	}
-	if (index >= strLen)
-		return 0;
-	if (str[index] == '-')
-	{
-		flag = 1;
-		index += 1;
-	}
-	else if (str[index] == '+')
-	{
-		index += 1;
-	}
-
-	for (int i = index; i < strLen; i++)
-	{
-		if (str[i] >= '0' && str[i] <= '9')
+		int aStr = aLen > 0 ? a[aLen - 1] - '0' : 0;
+		int bStr = bLen > 0 ? b[bLen - 1] - '0' : 0;
+		int bitData = aStr + bStr + carry;
+		if (bitData >= 2)
 		{
-			if (num > 214748364 || (num == 214748364 && flag == 0 && (str[i] - '0') > 7) || (num == 214748364 && flag == 1 && (str[i] - '0') > 8))
-			{
-				if (flag == 1)
-					return -2147483648;
-				else
-					return 2147483647;
-			}
-			num = num * 10 + str[i] - '0';
+			carry = 1;
+			result[bigLen - i] = '0' + bitData - 2;
 		}
 		else
-			break;
+		{
+			carry = 0;
+			result[bigLen - i] = '0' + bitData;
+		}
+		aLen--;
+		bLen--;
 	}
-	if (flag == 1)
+	if (carry)
 	{
-		num *= -1;
+		result[0] = '1';
+		return result ;
 	}
-	return num;
+	return result + 1;
 }
-
 
 int main()
 {
-	Solution23 solution;
+	Solution24 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	ListNode node1(1);
 	ListNode node2(2);
 	node1.next = &node2;
 	node2.next = NULL;
-	int temp = myAtoi("  -0012a42");
+	//int temp = myAtoi("  -0012a42");
+	//string str = solution.addBinary("11","1110");
+	char* temp = addBinary("11", "1");
 	//int temp = solution.myAtoi(" + 2 2 1");		   
 	//ListNode* result = solution.reverseList(&node1);
 	//int temp[1] = { 0 };
