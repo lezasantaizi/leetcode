@@ -20,11 +20,12 @@
 //#include"lengthOfLastWord.h"
 //#include"removeNthFromEnd.h"
 //#include"removeElements.h"
-#include"convert.h"
-#include"reverseList.h"
-#include"myAtoi.h"
-#include"addBinary.h"
-#include"climbStairs.h"
+//#include"convert.h"
+//#include"reverseList.h"
+//#include"myAtoi.h"
+//#include"addBinary.h"
+//#include"climbStairs.h"
+#include"deleteDuplicates.h"
 using namespace std;
 
 char* addBinary(char* a, char* b)
@@ -89,13 +90,15 @@ int climbStairs(int n) {
 
 int main()
 {
-	Solution25 solution;
+	Solution26 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	ListNode node1(1);
-	ListNode node2(2);
+	ListNode node2(1);
+	ListNode node3(2);
 	node1.next = &node2;
-	node2.next = NULL;
-	int result = solution.climbStairs(4);
+	node2.next = &node3;
+	node3.next = NULL;
+	ListNode* result = solution.deleteDuplicates(&node1);
 	//int temp = myAtoi("  -0012a42");
 	//string str = solution.addBinary("11","1110");
 	//char* temp = addBinary("11", "1");
