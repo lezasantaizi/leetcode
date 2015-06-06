@@ -102,6 +102,9 @@
     <ClCompile Include="isBalanced.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="isPalindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -186,6 +189,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="isBalanced.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="isPalindrome.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,3 @@
-#include<iostream>
-
 //#include "countPrimes.h"
 //#include "isHappy.h"
 //#include "hammingWeight.h"
@@ -26,72 +24,53 @@
 //#include"addBinary.h"
 //#include"climbStairs.h"
 //#include"deleteDuplicates.h"
-#include"isBalanced.h"
+//#include"isBalanced.h"
+#include "isPalindrome.h"
 using namespace std;
 
-char* addBinary(char* a, char* b)
+
+
+bool func(char* s)
 {
-
-	int aLen = 0;
-	int bLen = 0;
-	while (a[aLen++]);
-	while (b[bLen++]);
-	aLen = aLen - 1;
-	bLen = bLen - 1;
-	int bigLen = aLen < bLen ? bLen : aLen;
-	int carry = 0;
-	char* result = (char*)malloc(bigLen + 2);
-
-	result[bigLen+1] = 0;
-	
-	//string result = "";
-	for (int i = 0; i < bigLen; i++)
+	int sLen = 0;
+	while (s[sLen] !='\0')
 	{
-		int aStr = aLen > 0 ? a[aLen - 1] - '0' : 0;
-		int bStr = bLen > 0 ? b[bLen - 1] - '0' : 0;
-		int bitData = aStr + bStr + carry;
-		if (bitData >= 2)
-		{
-			carry = 1;
-			result[bigLen - i] = '0' + bitData - 2;
+		sLen++;
+	}
+
+	int j = sLen - 1;
+	for (int i = 0 ;i< sLen; i++)
+	{
+		if(i>=j)
+			break;
+		if((s[i] <= 'Z'&& s[i] >= 'A') ||(s[i] <='z' && s[i]>= 'a') || (s[i] <='9' && s[i]>= '0'))
+		{		
+			while(!((s[j]<= 'Z'&& s[j] >= 'A')||
+				(s[j] <='z' && s[j]>= 'a')||(s[j] <='9' && s[j]>= '0')))
+
+			{
+				j--;
+			}
+			if(i>=j)
+				break;
+			if((s[i]>'9' && s[j] > '9' &&(abs(s[i] - s[j]) == 32))|| (s[i] == s[j]))
+			{
+				j--;
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+
 		}
-		else
-		{
-			carry = 0;
-			result[bigLen - i] = '0' + bitData;
-		}
-		aLen--;
-		bLen--;
+
 	}
-	if (carry)
-	{
-		result[0] = '1';
-		return result ;
-	}
-	return result + 1;
+	return true;
 }
-
-int climbStairs(int n) {
-	//if (n == 0)
-	//	return 1;
-	//if (n == 1)
-	//	return 1;
-	//return climbStairs(n - 1) + climbStairs(n - 2);
-	int a = 0;
-	int b = 1;
-
-	for (int i = 0; i < n; i++)
-	{
-		int sum = a + b;
-		a = b;
-		b = sum;
-	}
-	return b;
-}
-
 int main()
 {
-	Solution27 solution;
+	Solution28 solution;
 	//vector<int> temp = { 9, 9, 9 };
 	//ListNode node1(1);
 	//ListNode node2(1);
@@ -100,18 +79,18 @@ int main()
 	//node2.next = &node3;
 	//node3.next = NULL;
 	//ListNode* result = solution.deleteDuplicates(&node1);
-
-
-	TreeNode node1(1);
-	TreeNode node2(2);
-	TreeNode node3(3);
-	node1.left = NULL;
-	node1.right = &node2;
-	node2.left = NULL;
-	node2.right = &node3;
-	node3.left = NULL;
-	node3.right = NULL;
-	solution.isBalanced(&node1);
+	//bool result = solution.isPalindrome("race a car");
+	bool result = func("A man, a plan, a canal: Panama");
+	//TreeNode node1(1);
+	//TreeNode node2(2);
+	//TreeNode node3(3);
+	//node1.left = NULL;
+	//node1.right = &node2;
+	//node2.left = NULL;
+	//node2.right = &node3;
+	//node3.left = NULL;
+	//node3.right = NULL;
+	//solution.isBalanced(&node1);
 	//int temp = myAtoi("  -0012a42");
 	//string str = solution.addBinary("11","1110");
 	//char* temp = addBinary("11", "1");
