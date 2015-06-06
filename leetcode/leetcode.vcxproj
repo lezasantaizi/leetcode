@@ -68,6 +68,7 @@
     <ClCompile Include="climbStairs.cpp" />
     <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="containsDuplicate.cpp" />
+    <ClCompile Include="containsNearbyDuplicate.cpp" />
     <ClCompile Include="convert.cpp" />
     <ClCompile Include="convertToTitle.cpp" />
     <ClCompile Include="countPrimes.cpp" />
@@ -100,6 +101,7 @@
     <ClInclude Include="climbStairs.h" />
     <ClInclude Include="compareVersion.h" />
     <ClInclude Include="containsDuplicate.h" />
+    <ClInclude Include="containsNearbyDuplicate.h" />
     <ClInclude Include="convert.h" />
     <ClInclude Include="convertToTitle.h" />
     <ClInclude Include="countPrimes.h" />

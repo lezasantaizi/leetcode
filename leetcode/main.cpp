@@ -26,6 +26,7 @@
 //#include"deleteDuplicates.h"
 //#include"isBalanced.h"
 #include "isPalindrome.h"
+#include"containsNearbyDuplicate.h"
 using namespace std;
 
 
@@ -70,7 +71,12 @@ bool func(char* s)
 }
 int main()
 {
-	Solution28 solution;
+	Solution29 solution;
+	vector<int> temp;
+	temp.push_back(1);
+	temp.push_back(2);
+	temp.push_back(1);
+	bool result = solution.containsNearbyDuplicate(temp,2);
 	//vector<int> temp = { 9, 9, 9 };
 	//ListNode node1(1);
 	//ListNode node2(1);
@@ -80,7 +86,7 @@ int main()
 	//node3.next = NULL;
 	//ListNode* result = solution.deleteDuplicates(&node1);
 	//bool result = solution.isPalindrome("race a car");
-	bool result = func("A man, a plan, a canal: Panama");
+	//bool result = func("A man, a plan, a canal: Panama");
 	//TreeNode node1(1);
 	//TreeNode node2(2);
 	//TreeNode node3(3);
