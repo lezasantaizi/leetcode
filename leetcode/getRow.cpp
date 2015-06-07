@@ -2,12 +2,11 @@
 
 vector<int> Solution32::getRow(int rowIndex)
 {
-	if (rowIndex <1)
+	if (rowIndex <0)
 	{
 		return vector<int>();
 	}
 	vector<int> row(rowIndex+1,1);
-
 	for (int iter = 1 ;iter< rowIndex ;iter++)
 	{
 		int last = 1; 
@@ -20,6 +19,5 @@ vector<int> Solution32::getRow(int rowIndex)
 			
 		}
 	}
-
 	return row;
 }
