@@ -89,6 +89,7 @@
     <ClCompile Include="myAtoi.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
+    <ClCompile Include="removeElement.cpp" />
     <ClCompile Include="removeElements.cpp" />
     <ClCompile Include="removeNthFromEnd.cpp" />
     <ClCompile Include="reverse.cpp" />
@@ -124,6 +125,7 @@
     <ClInclude Include="myAtoi.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
+    <ClInclude Include="removeElement.h" />
     <ClInclude Include="removeElements.h" />
     <ClInclude Include="removeNthFromEnd.h" />
     <ClInclude Include="reverse.h" />

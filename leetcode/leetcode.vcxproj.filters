@@ -117,6 +117,9 @@
     <ClCompile Include="getRow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="removeElement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -216,6 +219,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="getRow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="removeElement.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

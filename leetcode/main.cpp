@@ -30,6 +30,7 @@
 #include "isValid.h"
 #include "generate.h"
 #include "getRow.h"
+#include "removeElement.h"
 using namespace std;
 
 
@@ -74,13 +75,14 @@ bool func(char* s)
 }
 int main()
 {
-	Solution32 solution;
+	Solution33 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
-	temp.push_back(1);
+	temp.push_back(3);
+	int result = solution.removeElement(temp,1);
 	//vector<vector<int>> result = solution.generate(5);
-	vector<int> result = solution.getRow(4);
+	//vector<int> result = solution.getRow(4);
 	//bool result = solution.containsNearbyDuplicate(temp,2);
 	//bool result = solution.isValid("{[()]()}");
 	//vector<int> temp = { 9, 9, 9 };
