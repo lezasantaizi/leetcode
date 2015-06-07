@@ -31,9 +31,47 @@
 #include "generate.h"
 #include "getRow.h"
 #include "removeElement.h"
+#include "romanToInt.h"
 using namespace std;
 
+//int toNumber(char ch) {  
+//	switch (ch) {  
+//	case 'I': return 1;  
+//	case 'V': return 5;  
+//	case 'X': return 10;  
+//	case 'L': return 50;  
+//	case 'C': return 100;  
+//	case 'D': return 500;  
+//	case 'M': return 1000;  
+//	}  
+//	return 0;  
+//} 
 
+int romanToInt(char* s) 
+{
+	int NUM[256] = { 0 };
+	NUM['I'] = 1;
+	NUM['V'] = 5;
+	NUM['X'] = 10;
+	NUM['L'] = 50;
+	NUM['C'] = 100;
+	NUM['D'] = 500;
+	NUM['M'] = 1000;
+	int i = 0;
+	int sum = NUM[s[0]];
+	while(s[++i])
+	{
+		if(NUM[s[i-1]] < NUM[s[i]])
+		{
+			sum+= NUM[s[i]] - 2*NUM[s[i-1]];
+		}
+		else
+		{
+			sum+= NUM[s[i]];
+		}
+	}
+	return sum;   
+}
 
 bool func(char* s)
 {
@@ -75,12 +113,13 @@ bool func(char* s)
 }
 int main()
 {
-	Solution33 solution;
+	Solution34 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
 	temp.push_back(3);
-	int result = solution.removeElement(temp,1);
+	int result = romanToInt("DCXXI");
+	//int result = solution.removeElement(temp,1);
 	//vector<vector<int>> result = solution.generate(5);
 	//vector<int> result = solution.getRow(4);
 	//bool result = solution.containsNearbyDuplicate(temp,2);
