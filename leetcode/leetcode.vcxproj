@@ -80,6 +80,7 @@
     <ClCompile Include="isIsomorphic.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
+    <ClCompile Include="isValid.cpp" />
     <ClCompile Include="lengthOfLastWord.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
@@ -113,6 +114,7 @@
     <ClInclude Include="isIsomorphic.h" />
     <ClInclude Include="isPalindrome.h" />
     <ClInclude Include="isSymmetric.h" />
+    <ClInclude Include="isValid.h" />
     <ClInclude Include="lengthOfLastWord.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="myAtoi.h" />

@@ -3,7 +3,7 @@
 bool Solution29::containsNearbyDuplicate(vector<int>& nums, int k) 
 {
 	int numLen = nums.size();
-	if (numLen < k )
+	if (numLen <= k )
 	{
 		k = numLen-1;
 	}

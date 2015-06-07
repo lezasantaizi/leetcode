@@ -27,6 +27,7 @@
 //#include"isBalanced.h"
 #include "isPalindrome.h"
 #include"containsNearbyDuplicate.h"
+#include "isValid.h"
 using namespace std;
 
 
@@ -71,12 +72,13 @@ bool func(char* s)
 }
 int main()
 {
-	Solution29 solution;
+	Solution30 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
 	temp.push_back(1);
-	bool result = solution.containsNearbyDuplicate(temp,2);
+	//bool result = solution.containsNearbyDuplicate(temp,2);
+	bool result = solution.isValid("{[()]()}");
 	//vector<int> temp = { 9, 9, 9 };
 	//ListNode node1(1);
 	//ListNode node2(1);
