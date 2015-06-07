@@ -73,6 +73,7 @@
     <ClCompile Include="convertToTitle.cpp" />
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="deleteDuplicates.cpp" />
+    <ClCompile Include="generate.cpp" />
     <ClCompile Include="getIntersectionNode.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isBalanced.cpp" />
@@ -107,6 +108,7 @@
     <ClInclude Include="convertToTitle.h" />
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="deleteDuplicates.h" />
+    <ClInclude Include="generate.h" />
     <ClInclude Include="getIntersectionNode.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isBalanced.h" />

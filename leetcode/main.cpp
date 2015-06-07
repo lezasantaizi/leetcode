@@ -28,6 +28,7 @@
 #include "isPalindrome.h"
 #include"containsNearbyDuplicate.h"
 #include "isValid.h"
+#include "generate.h"
 using namespace std;
 
 
@@ -72,13 +73,14 @@ bool func(char* s)
 }
 int main()
 {
-	Solution30 solution;
+	Solution31 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
 	temp.push_back(1);
+	vector<vector<int>> result = solution.generate(5);
 	//bool result = solution.containsNearbyDuplicate(temp,2);
-	bool result = solution.isValid("{[()]()}");
+	//bool result = solution.isValid("{[()]()}");
 	//vector<int> temp = { 9, 9, 9 };
 	//ListNode node1(1);
 	//ListNode node2(1);
