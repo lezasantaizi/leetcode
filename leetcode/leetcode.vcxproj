@@ -75,6 +75,7 @@
     <ClCompile Include="deleteDuplicates.cpp" />
     <ClCompile Include="generate.cpp" />
     <ClCompile Include="getIntersectionNode.cpp" />
+    <ClCompile Include="getRow.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="isBalanced.cpp" />
     <ClCompile Include="isHappy.cpp" />
@@ -110,6 +111,7 @@
     <ClInclude Include="deleteDuplicates.h" />
     <ClInclude Include="generate.h" />
     <ClInclude Include="getIntersectionNode.h" />
+    <ClInclude Include="getRow.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="isBalanced.h" />
     <ClInclude Include="isHappy.h" />
