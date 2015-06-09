@@ -33,97 +33,45 @@
 #include "removeElement.h"
 #include "romanToInt.h"
 #include"merge.h"
+#include"isSameTree.h"
 using namespace std;
 
-//int toNumber(char ch) {  
-//	switch (ch) {  
-//	case 'I': return 1;  
-//	case 'V': return 5;  
-//	case 'X': return 10;  
-//	case 'L': return 50;  
-//	case 'C': return 100;  
-//	case 'D': return 500;  
-//	case 'M': return 1000;  
-//	}  
-//	return 0;  
-//} 
 
-int romanToInt(char* s) 
-{
-	int NUM[256] = { 0 };
-	NUM['I'] = 1;
-	NUM['V'] = 5;
-	NUM['X'] = 10;
-	NUM['L'] = 50;
-	NUM['C'] = 100;
-	NUM['D'] = 500;
-	NUM['M'] = 1000;
-	int i = 0;
-	int sum = NUM[s[0]];
-	while(s[++i])
-	{
-		if(NUM[s[i-1]] < NUM[s[i]])
-		{
-			sum+= NUM[s[i]] - 2*NUM[s[i-1]];
-		}
-		else
-		{
-			sum+= NUM[s[i]];
-		}
-	}
-	return sum;   
-}
-
-bool func(char* s)
-{
-	int sLen = 0;
-	while (s[sLen] !='\0')
-	{
-		sLen++;
-	}
-
-	int j = sLen - 1;
-	for (int i = 0 ;i< sLen; i++)
-	{
-		if(i>=j)
-			break;
-		if((s[i] <= 'Z'&& s[i] >= 'A') ||(s[i] <='z' && s[i]>= 'a') || (s[i] <='9' && s[i]>= '0'))
-		{		
-			while(!((s[j]<= 'Z'&& s[j] >= 'A')||
-				(s[j] <='z' && s[j]>= 'a')||(s[j] <='9' && s[j]>= '0')))
-
-			{
-				j--;
-			}
-			if(i>=j)
-				break;
-			if((s[i]>'9' && s[j] > '9' &&(abs(s[i] - s[j]) == 32))|| (s[i] == s[j]))
-			{
-				j--;
-				continue;
-			}
-			else
-			{
-				return false;
-			}
-
-		}
-
-	}
-	return true;
-}
 int main()
 {
-	Solution35 solution;
+	Solution36 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
 	temp.push_back(3);
-	int result = romanToInt("DCXXI");
+	//int result = romanToInt("DCXXI");
 
-	vector<int> temp1(10, 1);
-	vector<int> temp2(3, 2);
-	solution.merge(temp1,3,temp2,2);
+	//vector<int> temp1(10, 1);
+	//vector<int> temp2(3, 2);
+	//solution.merge(temp1,3,temp2,2);
+
+	TreeNode temp1(1);
+	TreeNode temp2(2);
+	TreeNode temp3(3);
+	TreeNode temp4(1);
+	TreeNode temp5(2);
+	TreeNode temp6(3);
+
+	temp1.left = &temp2;
+	temp1.right = NULL;
+	temp2.right = NULL;
+	temp2.left = &temp3;
+	temp3.left = NULL;
+	temp3.right = NULL;
+	temp4.left = &temp5;
+	temp5.left = NULL;
+	temp5.right = NULL;
+	temp4.right = &temp6;
+	temp6.left = NULL;
+	temp6.right = NULL;
+
+	bool result = solution.isSameTree(&temp1,&temp4);
+
 
 
 	return 0;

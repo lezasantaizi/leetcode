@@ -81,6 +81,7 @@
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="isIsomorphic.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
+    <ClCompile Include="isSameTree.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
     <ClCompile Include="lengthOfLastWord.cpp" />
@@ -120,6 +121,7 @@
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isIsomorphic.h" />
     <ClInclude Include="isPalindrome.h" />
+    <ClInclude Include="isSameTree.h" />
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
     <ClInclude Include="lengthOfLastWord.h" />
