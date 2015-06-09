@@ -32,6 +32,7 @@
 #include "getRow.h"
 #include "removeElement.h"
 #include "romanToInt.h"
+#include"merge.h"
 using namespace std;
 
 //int toNumber(char ch) {  
@@ -113,46 +114,18 @@ bool func(char* s)
 }
 int main()
 {
-	Solution34 solution;
+	Solution35 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
 	temp.push_back(3);
 	int result = romanToInt("DCXXI");
-	//int result = solution.removeElement(temp,1);
-	//vector<vector<int>> result = solution.generate(5);
-	//vector<int> result = solution.getRow(4);
-	//bool result = solution.containsNearbyDuplicate(temp,2);
-	//bool result = solution.isValid("{[()]()}");
-	//vector<int> temp = { 9, 9, 9 };
-	//ListNode node1(1);
-	//ListNode node2(1);
-	//ListNode node3(2);
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = NULL;
-	//ListNode* result = solution.deleteDuplicates(&node1);
-	//bool result = solution.isPalindrome("race a car");
-	//bool result = func("A man, a plan, a canal: Panama");
-	//TreeNode node1(1);
-	//TreeNode node2(2);
-	//TreeNode node3(3);
-	//node1.left = NULL;
-	//node1.right = &node2;
-	//node2.left = NULL;
-	//node2.right = &node3;
-	//node3.left = NULL;
-	//node3.right = NULL;
-	//solution.isBalanced(&node1);
-	//int temp = myAtoi("  -0012a42");
-	//string str = solution.addBinary("11","1110");
-	//char* temp = addBinary("11", "1");
-	//int result = climbStairs(4);
-	//int temp = solution.myAtoi(" + 2 2 1");		   
-	//ListNode* result = solution.reverseList(&node1);
-	//int temp[1] = { 0 };
-	//string result = solution.convert("PAYPALISHIRING", 3);
-	//ListNode* result = removeNthFromEnd(&node1,1);
+
+	vector<int> temp1(10, 1);
+	vector<int> temp2(3, 2);
+	solution.merge(temp1,3,temp2,2);
+
+
 	return 0;
 }
 
