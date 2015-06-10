@@ -25,22 +25,23 @@
 //#include"climbStairs.h"
 //#include"deleteDuplicates.h"
 //#include"isBalanced.h"
-#include "isPalindrome.h"
-#include"containsNearbyDuplicate.h"
-#include "isValid.h"
-#include "generate.h"
-#include "getRow.h"
-#include "removeElement.h"
-#include "romanToInt.h"
-#include"merge.h"
-#include"isSameTree.h"
-#include"computeArea.h"
+//#include "isPalindrome.h"
+//#include"containsNearbyDuplicate.h"
+//#include "isValid.h"
+//#include "generate.h"
+//#include "getRow.h"
+//#include "removeElement.h"
+//#include "romanToInt.h"
+//#include"merge.h"
+//#include"isSameTree.h"
+//#include"computeArea.h"
+#include "minDepth.h"
 using namespace std;
 
 
 int main()
 {
-	Solution37 solution;
+	Solution38 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
@@ -59,9 +60,9 @@ int main()
 	TreeNode temp6(3);
 
 	temp1.left = &temp2;
-	temp1.right = NULL;
+	temp1.right = &temp3;
 	temp2.right = NULL;
-	temp2.left = &temp3;
+	temp2.left = NULL;
 	temp3.left = NULL;
 	temp3.right = NULL;
 	temp4.left = &temp5;
@@ -71,8 +72,9 @@ int main()
 	temp6.left = NULL;
 	temp6.right = NULL;
 
+	int result = solution.minDepth(&temp1);
 	//bool result = solution.isSameTree(&temp1,&temp4);
-	int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
+	//int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
 
 
 	return 0;
