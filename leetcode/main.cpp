@@ -34,12 +34,13 @@
 #include "romanToInt.h"
 #include"merge.h"
 #include"isSameTree.h"
+#include"computeArea.h"
 using namespace std;
 
 
 int main()
 {
-	Solution36 solution;
+	Solution37 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
@@ -70,8 +71,8 @@ int main()
 	temp6.left = NULL;
 	temp6.right = NULL;
 
-	bool result = solution.isSameTree(&temp1,&temp4);
-
+	//bool result = solution.isSameTree(&temp1,&temp4);
+	int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
 
 
 	return 0;

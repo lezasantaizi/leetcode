@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -67,6 +67,7 @@
     <ClCompile Include="addBinary.cpp" />
     <ClCompile Include="climbStairs.cpp" />
     <ClCompile Include="compareVersion.cpp" />
+    <ClCompile Include="computeArea.cpp" />
     <ClCompile Include="containsDuplicate.cpp" />
     <ClCompile Include="containsNearbyDuplicate.cpp" />
     <ClCompile Include="convert.cpp" />
@@ -107,6 +108,7 @@
     <ClInclude Include="addBinary.h" />
     <ClInclude Include="climbStairs.h" />
     <ClInclude Include="compareVersion.h" />
+    <ClInclude Include="computeArea.h" />
     <ClInclude Include="containsDuplicate.h" />
     <ClInclude Include="containsNearbyDuplicate.h" />
     <ClInclude Include="convert.h" />

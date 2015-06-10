@@ -129,6 +129,9 @@
     <ClCompile Include="isSameTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="computeArea.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -240,6 +243,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="isSameTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="computeArea.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
