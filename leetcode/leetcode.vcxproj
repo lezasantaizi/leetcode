@@ -78,6 +78,7 @@
     <ClCompile Include="getIntersectionNode.cpp" />
     <ClCompile Include="getRow.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
+    <ClCompile Include="hasPathSum.cpp" />
     <ClCompile Include="isBalanced.cpp" />
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="isIsomorphic.cpp" />
@@ -121,6 +122,7 @@
     <ClInclude Include="getIntersectionNode.h" />
     <ClInclude Include="getRow.h" />
     <ClInclude Include="hammingWeight.h" />
+    <ClInclude Include="hasPathSum.h" />
     <ClInclude Include="isBalanced.h" />
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isIsomorphic.h" />

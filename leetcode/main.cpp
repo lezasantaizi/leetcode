@@ -36,13 +36,14 @@
 //#include"isSameTree.h"
 //#include"computeArea.h"
 //#include "minDepth.h"
-#include "maxDepth.h"
+//#include "maxDepth.h"
+#include "hasPathSum.h"
 using namespace std;
 
 
 int main()
 {
-	Solution39 solution;
+	Solution40 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(2);
@@ -61,8 +62,8 @@ int main()
 	TreeNode temp6(3);
 
 	temp1.left = &temp2;
-	temp1.right = NULL;
-	temp2.right = &temp3;
+	temp1.right = &temp3;
+	temp2.right = NULL;
 	temp2.left = NULL;
 	temp3.left = NULL;
 	temp3.right = NULL;
@@ -74,7 +75,8 @@ int main()
 	temp6.right = NULL;
 
 	//int result = solution.minDepth(&temp1);
-	int result = solution.maxDepth(&temp1);
+	//int result = solution.maxDepth(&temp1);
+	bool result = solution.hasPathSum(&temp1,1);
 	//bool result = solution.isSameTree(&temp1,&temp4);
 	//int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
 
