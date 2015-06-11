@@ -87,6 +87,7 @@
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
     <ClCompile Include="lengthOfLastWord.cpp" />
+    <ClCompile Include="levelOrder.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="maxDepth.cpp" />
@@ -131,6 +132,7 @@
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
     <ClInclude Include="lengthOfLastWord.h" />
+    <ClInclude Include="levelOrder.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="maxDepth.h" />
     <ClInclude Include="merge.h" />
