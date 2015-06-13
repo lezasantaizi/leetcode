@@ -106,6 +106,7 @@
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="reverseBits.cpp" />
     <ClCompile Include="reverseList.cpp" />
+    <ClCompile Include="longestConsecutive.cpp" />
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="reverse.h" />
     <ClInclude Include="reverseBits.h" />
     <ClInclude Include="reverseList.h" />
+    <ClInclude Include="longestConsecutive.h" />
     <ClInclude Include="rob.h" />
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />

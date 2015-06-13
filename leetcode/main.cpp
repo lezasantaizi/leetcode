@@ -41,104 +41,18 @@
 //#include "levelOrder.h"
 //#include "invertTree.h"
 //#include "addTwoNumbers.h"
-#include<iostream>
-#include <queue>
-#include <string>
-#include <math.h>
+#include "longestConsecutive.h"
 using namespace std;
-
-
-
-
-struct ListNode {
-    int val;
-    struct ListNode *next;
-};
-
-struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
-	int carry = 0;
-	if (l1 == NULL)
-	{
-		return l2;
-	}
-	else if(l2 == NULL)
-	{
-		return l1;
-	}
-	struct ListNode* first = l1;
-	struct ListNode* second = l2;
-	while (1)
-	{
-		int temp = first->val+ second->val+carry;
-		if (temp >= 10)
-		{
-			carry = 1;
-			temp -= 10;
-		}
-		else
-			carry = 0;
-		first->val = temp;
-		if(first->next == NULL ||second->next ==NULL)
-			break;
-		first = first->next;
-		second = second->next;
-	}
-	if (first->next == NULL)
-	{
-		second = second->next;
-		while (second)
-		{
-			struct ListNode *node = (struct ListNode *)malloc(sizeof(struct ListNode));//new ListNode(second->val);
-			node->val = second->val;
-			//ListNode node(second->val);
-			int temp = node->val+ carry;
-			if (temp >= 10)
-			{
-				carry = 1;
-				temp -= 10;
-			}
-			else
-				carry = 0;
-			node->val = temp;
-			node->next = NULL;
-			first->next = node;
-			first = first->next;
-			second= second->next;
-		}
-	}
-	else
-	{
-		while (first->next)
-		{
-			int temp = first->next->val+ carry;
-			if (temp >= 10)
-			{
-				carry = 1;
-				temp -= 10;
-			}
-			else
-				carry = 0;
-			first->next->val = temp;
-			first = first->next;
-		}
-	}
-	if (carry)
-	{
-
-		struct ListNode *node = (struct ListNode *)malloc(sizeof(struct ListNode));//new ListNode(carry);
-		node->val = carry;
-		first->next = node;
-	}
-	return l1;  
-}
 
 int main()
 {
-	//Solution43 solution;
+	Solution44 solution;
 	vector<int> temp;
 	temp.push_back(1);
-	temp.push_back(2);
+	temp.push_back(5);
 	temp.push_back(3);
+	temp.push_back(0);
+	int result = solution.longestConsecutive(temp);
 	//int result = romanToInt("DCXXI");
 
 	//vector<int> temp1(10, 1);
@@ -169,16 +83,7 @@ int main()
 	//struct ListNode node1(1);
 	//struct ListNode node2(7);
 	//struct ListNode node3(3);
-	struct ListNode *node1 = (struct ListNode *)malloc(sizeof(struct ListNode));//new ListNode(second->val);
-	node1->val = 3;
-	struct ListNode *node2 = (struct ListNode *)malloc(sizeof(struct ListNode));//new ListNode(second->val);
-	node2->val = 9;
-	struct ListNode *node3 = (struct ListNode *)malloc(sizeof(struct ListNode));//new ListNode(second->val);
-	node3->val = 2;
-	node1->next = NULL;
-	node2->next = node3;
-	node3->next = NULL;
-	struct ListNode* result =addTwoNumbers(node1,node2);
+
 	//ListNode* result = solution.addTwoNumbers(&node1,&node2);
 
 	//int result = solution.minDepth(&temp1);
