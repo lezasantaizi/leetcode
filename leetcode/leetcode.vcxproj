@@ -98,6 +98,7 @@
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="minDepth.cpp" />
     <ClCompile Include="myAtoi.cpp" />
+    <ClCompile Include="partition.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
     <ClCompile Include="Queues2stack.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="merge.h" />
     <ClInclude Include="minDepth.h" />
     <ClInclude Include="myAtoi.h" />
+    <ClInclude Include="partition.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
     <ClInclude Include="Queues2stack.h" />

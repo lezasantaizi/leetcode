@@ -159,6 +159,9 @@
     <ClCompile Include="Queues2stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="partition.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -300,6 +303,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Queues2stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="partition.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

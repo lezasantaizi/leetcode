@@ -43,12 +43,13 @@
 //#include "addTwoNumbers.h"
 //#include "longestConsecutive.h"
 //#include "spiralOrder.h"
-#include "Queues2stack.h"
+//#include "Queues2stack.h"
+#include "partition.h"
 using namespace std;
 
 int main()
 {
-	Solution46 solution;
+	Solution47 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(5);
@@ -65,11 +66,23 @@ int main()
 		}
 		matrix.push_back(temp);
 	}
+
+	ListNode node1(1);
+	ListNode node2(4);
+	ListNode node3(3);
+	ListNode node4(2);
+	ListNode node5(5);
+	ListNode node6(2);
+
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = &node6;
+	node6.next = NULL;
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
-	solution.push(1);
-	solution.push(2);
-	int result = solution.top();
+	ListNode* result = solution.partition(&node1,3);
 	//int result = romanToInt("DCXXI");
 
 	//vector<int> temp1(10, 1);
