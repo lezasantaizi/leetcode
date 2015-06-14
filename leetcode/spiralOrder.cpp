@@ -1,10 +1,5 @@
 #include "spiralOrder.h"
 
-void printVector(vector<int>& temp)
-{
-	
-}
-
 vector<int> Solution45::spiralOrder(vector<vector<int>>& matrix) 
 {
 	vector<int> result ;
@@ -12,7 +7,6 @@ vector<int> Solution45::spiralOrder(vector<vector<int>>& matrix)
 	if(row == 0)
 		return result;
 	int col = matrix[0].size();
-	
 	for (int i = 0;i< min((row+1)/2,(col+1)/2);i++)
 	{
 		for (int j = i;j<col-i;j++)//Ë³ºá
