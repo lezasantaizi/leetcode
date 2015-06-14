@@ -41,18 +41,31 @@
 //#include "levelOrder.h"
 //#include "invertTree.h"
 //#include "addTwoNumbers.h"
-#include "longestConsecutive.h"
+//#include "longestConsecutive.h"
+#include "spiralOrder.h"
 using namespace std;
 
 int main()
 {
-	Solution44 solution;
+	Solution45 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(5);
 	temp.push_back(3);
 	temp.push_back(0);
-	int result = solution.longestConsecutive(temp);
+
+	vector<vector<int>> matrix;
+	for (int i = 0 ;i<3;i++)
+	{
+		vector<int> temp;
+		for (int j = 0;j<3;j++)
+		{
+			temp.push_back(i*3+j+1);
+		}
+		matrix.push_back(temp);
+	}
+	//int result = solution.longestConsecutive(temp);
+	vector<int> result = solution.spiralOrder(matrix);
 	//int result = romanToInt("DCXXI");
 
 	//vector<int> temp1(10, 1);

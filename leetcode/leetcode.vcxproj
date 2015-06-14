@@ -110,6 +110,7 @@
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
+    <ClCompile Include="spiralOrder.cpp" />
     <ClCompile Include="titleToNumber.cpp" />
     <ClCompile Include="trailingZeroes.cpp" />
   </ItemGroup>
@@ -157,6 +158,7 @@
     <ClInclude Include="rob.h" />
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
+    <ClInclude Include="spiralOrder.h" />
     <ClInclude Include="titleToNumber.h" />
     <ClInclude Include="trailingZeroes.h" />
   </ItemGroup>
