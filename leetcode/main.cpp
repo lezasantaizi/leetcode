@@ -42,12 +42,13 @@
 //#include "invertTree.h"
 //#include "addTwoNumbers.h"
 //#include "longestConsecutive.h"
-#include "spiralOrder.h"
+//#include "spiralOrder.h"
+#include "Queues2stack.h"
 using namespace std;
 
 int main()
 {
-	Solution45 solution;
+	Solution46 solution;
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(5);
@@ -65,7 +66,10 @@ int main()
 		matrix.push_back(temp);
 	}
 	//int result = solution.longestConsecutive(temp);
-	vector<int> result = solution.spiralOrder(matrix);
+	//vector<int> result = solution.spiralOrder(matrix);
+	solution.push(1);
+	solution.push(2);
+	int result = solution.top();
 	//int result = romanToInt("DCXXI");
 
 	//vector<int> temp1(10, 1);

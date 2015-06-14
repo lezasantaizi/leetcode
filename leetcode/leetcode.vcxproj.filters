@@ -156,6 +156,9 @@
     <ClCompile Include="spiralOrder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Queues2stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -294,6 +297,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="spiralOrder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Queues2stack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
