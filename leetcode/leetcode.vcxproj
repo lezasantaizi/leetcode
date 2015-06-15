@@ -66,7 +66,7 @@
   <ItemGroup>
     <ClCompile Include="addBinary.cpp" />
     <ClCompile Include="addTwoNumbers.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="climbStairs.cpp" />
     <ClCompile Include="compareVersion.cpp" />
@@ -102,6 +102,7 @@
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
     <ClCompile Include="Queues2stack.cpp" />
+    <ClCompile Include="rangeBitwiseAnd.cpp" />
     <ClCompile Include="removeElement.cpp" />
     <ClCompile Include="removeElements.cpp" />
     <ClCompile Include="removeNthFromEnd.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
     <ClInclude Include="Queues2stack.h" />
+    <ClInclude Include="rangeBitwiseAnd.h" />
     <ClInclude Include="removeElement.h" />
     <ClInclude Include="removeElements.h" />
     <ClInclude Include="removeNthFromEnd.h" />

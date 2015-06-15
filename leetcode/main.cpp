@@ -45,11 +45,13 @@
 //#include "spiralOrder.h"
 //#include "Queues2stack.h"
 #include "partition.h"
+#include "rangeBitwiseAnd.h"
 using namespace std;
 
 int main()
 {
-	Solution47 solution;
+	Solution48 solution;
+	int result = solution.rangeBitwiseAnd(5,9);
 	vector<int> temp;
 	temp.push_back(1);
 	temp.push_back(5);
@@ -82,7 +84,7 @@ int main()
 	node6.next = NULL;
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
-	ListNode* result = solution.partition(&node1,3);
+	//ListNode* result = solution.partition(&node1,3);
 	//int result = romanToInt("DCXXI");
 
 	//vector<int> temp1(10, 1);
