@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -113,9 +113,13 @@
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
-    <ClCompile Include="spiralOrder.cpp" />
+    <ClCompile Include="spiralOrder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="threeSumClosest.cpp" />
     <ClCompile Include="titleToNumber.cpp" />
     <ClCompile Include="trailingZeroes.cpp" />
+    <ClCompile Include="twoSum.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addBinary.h" />
@@ -165,8 +169,10 @@
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
     <ClInclude Include="spiralOrder.h" />
+    <ClInclude Include="threeSumClosest.h" />
     <ClInclude Include="titleToNumber.h" />
     <ClInclude Include="trailingZeroes.h" />
+    <ClInclude Include="twoSum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

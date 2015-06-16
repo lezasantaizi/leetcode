@@ -165,6 +165,12 @@
     <ClCompile Include="rangeBitwiseAnd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="threeSumClosest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="twoSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -312,6 +318,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="rangeBitwiseAnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeSumClosest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="twoSum.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
