@@ -116,6 +116,7 @@
     <ClCompile Include="spiralOrder.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="threeSum.cpp" />
     <ClCompile Include="threeSumClosest.cpp" />
     <ClCompile Include="titleToNumber.cpp" />
     <ClCompile Include="trailingZeroes.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
     <ClInclude Include="spiralOrder.h" />
+    <ClInclude Include="threeSum.h" />
     <ClInclude Include="threeSumClosest.h" />
     <ClInclude Include="titleToNumber.h" />
     <ClInclude Include="trailingZeroes.h" />

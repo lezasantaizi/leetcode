@@ -47,17 +47,43 @@
 //#include "partition.h"
 //#include "rangeBitwiseAnd.h"
 #include"twoSum.h"
+#include"threeSum.h"
 using namespace std;
 
 int main()
 {
-	Solution50 solution;
+	Solution51 solution;
 	vector<int> num;
-	num.push_back(3);
+	//num.push_back(-4);
+	//num.push_back(-2);
+	//num.push_back(-2);
+	//num.push_back(-2);
+	//num.push_back(0);
+	//num.push_back(1);
+	//num.push_back(2);
+	//num.push_back(2);
+	//num.push_back(2);
+	//num.push_back(3);
+	//num.push_back(3);
+	//num.push_back(4);
+	//num.push_back(4);
+	//num.push_back(6);
+	//num.push_back(6);
+
+	//{-1 0 1 2 -1 -4},
+	num.push_back(-1);
+	num.push_back(0);
+	num.push_back(1);
 	num.push_back(2);
-	num.push_back(4);
-	num.push_back(15);
-	vector<int> result = solution.twoSum(num,6);	   
+	num.push_back(-1);
+	num.push_back(-4);
+
+
+
+	//[-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
+	//num.push_back(-4);
+	vector<vector<int>> result = solution.threeSum(num);
+	//vector<int> result = solution.twoSum(num,6);	   
 	//int result = solution.rangeBitwiseAnd(5,9);
 	vector<int> temp;
 	temp.push_back(1);

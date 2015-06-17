@@ -171,6 +171,9 @@
     <ClCompile Include="twoSum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="threeSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -324,6 +327,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="twoSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeSum.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
