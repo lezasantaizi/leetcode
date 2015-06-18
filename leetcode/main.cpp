@@ -48,11 +48,12 @@
 //#include "rangeBitwiseAnd.h"
 #include"twoSum.h"
 #include"threeSum.h"
+#include"fourSum.h"
 using namespace std;
 
 int main()
 {
-	Solution51 solution;
+	Solution52 solution;
 	vector<int> num;
 	//num.push_back(-4);
 	//num.push_back(-2);
@@ -76,13 +77,14 @@ int main()
 	num.push_back(1);
 	num.push_back(2);
 	num.push_back(-1);
-	num.push_back(-4);
+	num.push_back(4);
 
 
 
 	//[-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
 	//num.push_back(-4);
-	vector<vector<int>> result = solution.threeSum(num);
+	vector<vector<int>> result = solution.fourSum(num, 2);
+	//vector<vector<int>> result = solution.threeSum(num);
 	//vector<int> result = solution.twoSum(num,6);	   
 	//int result = solution.rangeBitwiseAnd(5,9);
 	vector<int> temp;
