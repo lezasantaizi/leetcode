@@ -117,6 +117,7 @@
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
+    <ClCompile Include="searchInsert.cpp" />
     <ClCompile Include="spiralOrder.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -175,6 +176,7 @@
     <ClInclude Include="rob.h" />
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
+    <ClInclude Include="searchInsert.h" />
     <ClInclude Include="spiralOrder.h" />
     <ClInclude Include="threeSum.h" />
     <ClInclude Include="threeSumClosest.h" />

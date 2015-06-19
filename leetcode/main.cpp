@@ -50,19 +50,22 @@
 //#include"threeSum.h"
 //#include"fourSum.h"
 #include "isPalindrome2.h"
+#include "searchInsert.h"
 using namespace std;
 
 int main()
 {
-	Solution53 solution;
-	bool result = solution.isPalindrome(121343121);
+	Solution54 solution;
+	
+	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
-	//num.push_back(-4);
-	//num.push_back(-2);
-	//num.push_back(-2);
-	//num.push_back(-2);
-	//num.push_back(0);
-	//num.push_back(1);
+	num.push_back(-4);
+	num.push_back(-2);
+	num.push_back(2);
+	num.push_back(3);
+	num.push_back(10);
+	int result = solution.searchInsert(num,-10);
+	num.push_back(1);
 	//num.push_back(2);
 	//num.push_back(2);
 	//num.push_back(2);
