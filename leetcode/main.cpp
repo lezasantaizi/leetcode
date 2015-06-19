@@ -46,14 +46,16 @@
 //#include "Queues2stack.h"
 //#include "partition.h"
 //#include "rangeBitwiseAnd.h"
-#include"twoSum.h"
-#include"threeSum.h"
-#include"fourSum.h"
+//#include"twoSum.h"
+//#include"threeSum.h"
+//#include"fourSum.h"
+#include "isPalindrome2.h"
 using namespace std;
 
 int main()
 {
-	Solution52 solution;
+	Solution53 solution;
+	bool result = solution.isPalindrome(121343121);
 	vector<int> num;
 	//num.push_back(-4);
 	//num.push_back(-2);
@@ -83,7 +85,7 @@ int main()
 
 	//[-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
 	//num.push_back(-4);
-	vector<vector<int>> result = solution.fourSum(num, 2);
+	//vector<vector<int>> result = solution.fourSum(num, 2);
 	//vector<vector<int>> result = solution.threeSum(num);
 	//vector<int> result = solution.twoSum(num,6);	   
 	//int result = solution.rangeBitwiseAnd(5,9);

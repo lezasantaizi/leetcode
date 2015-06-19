@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -77,7 +77,9 @@
     <ClCompile Include="convertToTitle.cpp" />
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="deleteDuplicates.cpp" />
-    <ClCompile Include="fourSum.cpp" />
+    <ClCompile Include="fourSum.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="generate.cpp" />
     <ClCompile Include="getIntersectionNode.cpp" />
     <ClCompile Include="getRow.cpp" />
@@ -88,6 +90,7 @@
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="isIsomorphic.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
+    <ClCompile Include="isPalindrome2.cpp" />
     <ClCompile Include="isSameTree.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
@@ -146,6 +149,7 @@
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isIsomorphic.h" />
     <ClInclude Include="isPalindrome.h" />
+    <ClInclude Include="isPalindrome2.h" />
     <ClInclude Include="isSameTree.h" />
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
