@@ -183,6 +183,9 @@
     <ClCompile Include="searchInsert.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lengthOfLongestSubstring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -348,6 +351,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="searchInsert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lengthOfLongestSubstring.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

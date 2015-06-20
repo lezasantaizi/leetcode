@@ -51,11 +51,12 @@
 //#include"fourSum.h"
 #include "isPalindrome2.h"
 #include "searchInsert.h"
+#include "lengthOfLongestSubstring.h"
 using namespace std;
 
 int main()
 {
-	Solution54 solution;
+	Solution55 solution;
 	
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
@@ -64,7 +65,8 @@ int main()
 	num.push_back(2);
 	num.push_back(3);
 	num.push_back(10);
-	int result = solution.searchInsert(num,-10);
+	int result = solution.lengthOfLongestSubstring("dvdf");
+	//int result = solution.searchInsert(num,-10);
 	num.push_back(1);
 	//num.push_back(2);
 	//num.push_back(2);
