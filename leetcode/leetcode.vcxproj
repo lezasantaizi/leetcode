@@ -89,6 +89,7 @@
     <ClCompile Include="isBalanced.cpp" />
     <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="isIsomorphic.cpp" />
+    <ClCompile Include="isNumber.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
     <ClCompile Include="isPalindrome2.cpp" />
     <ClCompile Include="isSameTree.cpp" />
@@ -150,6 +151,7 @@
     <ClInclude Include="isBalanced.h" />
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isIsomorphic.h" />
+    <ClInclude Include="isNumber.h" />
     <ClInclude Include="isPalindrome.h" />
     <ClInclude Include="isPalindrome2.h" />
     <ClInclude Include="isSameTree.h" />

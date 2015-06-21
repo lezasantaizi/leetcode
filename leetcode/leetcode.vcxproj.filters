@@ -186,6 +186,9 @@
     <ClCompile Include="lengthOfLongestSubstring.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="isNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -354,6 +357,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="lengthOfLongestSubstring.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="isNumber.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

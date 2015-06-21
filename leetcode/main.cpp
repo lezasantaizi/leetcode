@@ -52,12 +52,13 @@
 #include "isPalindrome2.h"
 #include "searchInsert.h"
 #include "lengthOfLongestSubstring.h"
+#include "isNumber.h"
 using namespace std;
 
 int main()
 {
-	Solution55 solution;
-	
+	Solution56 solution;
+	bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
 	num.push_back(-4);
@@ -65,7 +66,7 @@ int main()
 	num.push_back(2);
 	num.push_back(3);
 	num.push_back(10);
-	int result = solution.lengthOfLongestSubstring("dvdf");
+	//int result = solution.lengthOfLongestSubstring("dvdf");
 	//int result = solution.searchInsert(num,-10);
 	num.push_back(1);
 	//num.push_back(2);
