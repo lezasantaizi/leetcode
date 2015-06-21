@@ -69,6 +69,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="climbStairs.cpp" />
+    <ClCompile Include="combinationSum3.cpp" />
     <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="computeArea.cpp" />
     <ClCompile Include="containsDuplicate.cpp" />
@@ -133,6 +134,7 @@
     <ClInclude Include="addBinary.h" />
     <ClInclude Include="addTwoNumbers.h" />
     <ClInclude Include="climbStairs.h" />
+    <ClInclude Include="combinationSum3.h" />
     <ClInclude Include="compareVersion.h" />
     <ClInclude Include="computeArea.h" />
     <ClInclude Include="containsDuplicate.h" />

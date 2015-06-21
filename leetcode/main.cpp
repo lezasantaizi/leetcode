@@ -53,12 +53,14 @@
 #include "searchInsert.h"
 #include "lengthOfLongestSubstring.h"
 #include "isNumber.h"
+#include "combinationSum3.h"
 using namespace std;
 
 int main()
 {
-	Solution56 solution;
-	bool result = solution.isNumber("-2e");
+	Solution57 solution;
+	vector<vector<int>> result = solution.combinationSum3(3,9);
+	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
 	num.push_back(-4);

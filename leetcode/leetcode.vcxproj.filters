@@ -189,6 +189,9 @@
     <ClCompile Include="isNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="combinationSum3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -360,6 +363,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="isNumber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="combinationSum3.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
