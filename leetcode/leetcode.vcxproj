@@ -70,6 +70,7 @@
     </ClCompile>
     <ClCompile Include="climbStairs.cpp" />
     <ClCompile Include="combinationSum3.cpp" />
+    <ClCompile Include="combine.cpp" />
     <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="computeArea.cpp" />
     <ClCompile Include="containsDuplicate.cpp" />
@@ -135,6 +136,7 @@
     <ClInclude Include="addTwoNumbers.h" />
     <ClInclude Include="climbStairs.h" />
     <ClInclude Include="combinationSum3.h" />
+    <ClInclude Include="combine.h" />
     <ClInclude Include="compareVersion.h" />
     <ClInclude Include="computeArea.h" />
     <ClInclude Include="containsDuplicate.h" />
