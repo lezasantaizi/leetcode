@@ -56,22 +56,80 @@
 #include "combinationSum3.h"
 #include "combine.h"
 #include "calculate.h"
+#include "largestNumber.h"
 using namespace std;
+
+char* largestNumber(int* nums, int numsSize) {
+	char* result = (char*)malloc(numsSize* 20);
+	memset(result,0,numsSize*20);
+	char num2Char1[20];
+	char num2Char2[20];
+	for (int i = 0 ;i< numsSize;++i)
+	{
+		for (int j = i+1; j < numsSize; j++)
+		{
+			//itoa(nums[i],num2Char1,10);
+			//itoa(nums[j],num2Char2,10);
+			sprintf(num2Char1,"%d",nums[i]);
+			sprintf(num2Char2,"%d",nums[j]);
+			int iter1 = 0;
+			int iter2 = 0;
+			while(1)
+			{
+				if(num2Char1[iter1] > num2Char2[iter2])
+				{
+					break;
+				}
+				else if(num2Char1[iter1] < num2Char2[iter2])
+				{
+					int temp = nums[i];
+					nums[i] = nums[j];
+					nums[j] = temp;
+					break;
+				}
+				++iter1;
+				++iter2;
+
+				// 898£¬89 ; 898 898 < 89 89 89 ,so 89 898 > 898 89
+				if(num2Char1[iter1] == '\0'&& num2Char2[iter2] != '\0')
+					iter1 = 0;
+				else if (num2Char1[iter1] != '\0' && num2Char2[iter2] == '\0')
+					iter2 = 0;
+				else if(num2Char1[iter1] == '\0'&& num2Char2[iter2] == '\0')
+					break;
+			}
+		}
+		if(nums[0] == 0)
+		{
+			return "0"; 
+		}
+		//itoa(nums[i],num2Char1,10);
+		sprintf(num2Char1,"%d",nums[i]);
+		strcat(result,num2Char1);
+	}
+	return result;    
+}
+
 
 int main()
 {
-	Solution59 solution;
-	int result = solution.calculate("(1+2)+3");//("1 - (1+2+(3 - 2))") ;
+	Solution60 solution;
+	
+	int nums[3]= {898,89,7};
+	char* result2 = largestNumber(nums, 3) ;
+
+	//int result = solution.calculate("(1+2)+3");//("1 - (1+2+(3 - 2))") ;
 	//vector<vector<int>> result = solution.combine(1,1);
 	//vector<vector<int>> result = solution.combinationSum3(3,9);
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
-	num.push_back(-4);
-	num.push_back(-2);
-	num.push_back(2);
 	num.push_back(3);
-	num.push_back(10);
+	num.push_back(89);
+	num.push_back(898);
+	num.push_back(5);
+	num.push_back(1);
+	string result = solution.largestNumber(num);
 	//int result = solution.lengthOfLongestSubstring("dvdf");
 	//int result = solution.searchInsert(num,-10);
 	num.push_back(1);

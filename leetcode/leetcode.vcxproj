@@ -98,6 +98,7 @@
     <ClCompile Include="isSameTree.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
+    <ClCompile Include="largestNumber.cpp" />
     <ClCompile Include="lengthOfLastWord.cpp" />
     <ClCompile Include="lengthOfLongestSubstring.cpp" />
     <ClCompile Include="levelOrder.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="isSameTree.h" />
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
+    <ClInclude Include="largestNumber.h" />
     <ClInclude Include="lengthOfLastWord.h" />
     <ClInclude Include="lengthOfLongestSubstring.h" />
     <ClInclude Include="levelOrder.h" />
