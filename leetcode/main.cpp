@@ -57,6 +57,7 @@
 #include "combine.h"
 #include "calculate.h"
 #include "largestNumber.h"
+#include "findKthLargest.h"
 using namespace std;
 
 char* largestNumber(int* nums, int numsSize) {
@@ -113,11 +114,11 @@ char* largestNumber(int* nums, int numsSize) {
 
 int main()
 {
-	Solution60 solution;
+	Solution61 solution;
 	
 	int nums[3]= {898,89,7};
-	char* result2 = largestNumber(nums, 3) ;
-
+	//char* result2 = largestNumber(nums, 3) ;
+	
 	//int result = solution.calculate("(1+2)+3");//("1 - (1+2+(3 - 2))") ;
 	//vector<vector<int>> result = solution.combine(1,1);
 	//vector<vector<int>> result = solution.combinationSum3(3,9);
@@ -125,11 +126,12 @@ int main()
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
 	num.push_back(3);
-	num.push_back(89);
-	num.push_back(898);
-	num.push_back(5);
 	num.push_back(1);
-	string result = solution.largestNumber(num);
+	num.push_back(2);
+	num.push_back(4);
+	//num.push_back(1);
+	int result = solution.findKthLargest(num,2);
+	//string result = solution.largestNumber(num);
 	//int result = solution.lengthOfLongestSubstring("dvdf");
 	//int result = solution.searchInsert(num,-10);
 	num.push_back(1);

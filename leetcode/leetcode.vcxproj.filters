@@ -198,6 +198,12 @@
     <ClCompile Include="calculate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="largestNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="findKthLargest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -378,6 +384,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="calculate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="largestNumber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="findKthLargest.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
