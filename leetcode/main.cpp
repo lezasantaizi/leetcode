@@ -58,63 +58,12 @@
 #include "calculate.h"
 #include "largestNumber.h"
 #include "findKthLargest.h"
+#include "reverseBetween.h"
 using namespace std;
-
-char* largestNumber(int* nums, int numsSize) {
-	char* result = (char*)malloc(numsSize* 20);
-	memset(result,0,numsSize*20);
-	char num2Char1[20];
-	char num2Char2[20];
-	for (int i = 0 ;i< numsSize;++i)
-	{
-		for (int j = i+1; j < numsSize; j++)
-		{
-			//itoa(nums[i],num2Char1,10);
-			//itoa(nums[j],num2Char2,10);
-			sprintf(num2Char1,"%d",nums[i]);
-			sprintf(num2Char2,"%d",nums[j]);
-			int iter1 = 0;
-			int iter2 = 0;
-			while(1)
-			{
-				if(num2Char1[iter1] > num2Char2[iter2])
-				{
-					break;
-				}
-				else if(num2Char1[iter1] < num2Char2[iter2])
-				{
-					int temp = nums[i];
-					nums[i] = nums[j];
-					nums[j] = temp;
-					break;
-				}
-				++iter1;
-				++iter2;
-
-				// 898£¬89 ; 898 898 < 89 89 89 ,so 89 898 > 898 89
-				if(num2Char1[iter1] == '\0'&& num2Char2[iter2] != '\0')
-					iter1 = 0;
-				else if (num2Char1[iter1] != '\0' && num2Char2[iter2] == '\0')
-					iter2 = 0;
-				else if(num2Char1[iter1] == '\0'&& num2Char2[iter2] == '\0')
-					break;
-			}
-		}
-		if(nums[0] == 0)
-		{
-			return "0"; 
-		}
-		//itoa(nums[i],num2Char1,10);
-		sprintf(num2Char1,"%d",nums[i]);
-		strcat(result,num2Char1);
-	}
-	return result;    
-}
-
 
 int main()
 {
-	Solution61 solution;
+	Solution62 solution;
 	
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -130,7 +79,8 @@ int main()
 	num.push_back(2);
 	num.push_back(4);
 	//num.push_back(1);
-	int result = solution.findKthLargest(num,2);
+	
+	//int result = solution.findKthLargest(num,2);
 	//string result = solution.largestNumber(num);
 	//int result = solution.lengthOfLongestSubstring("dvdf");
 	//int result = solution.searchInsert(num,-10);
@@ -178,19 +128,20 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	//ListNode node1(1);
-	//ListNode node2(4);
-	//ListNode node3(3);
-	//ListNode node4(2);
-	//ListNode node5(5);
-	//ListNode node6(2);
+	ListNode node1(1);
+	ListNode node2(2);
+	ListNode node3(3);
+	ListNode node4(4);
+	ListNode node5(5);
+	ListNode node6(2);
 
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node5;
-	//node5.next = &node6;
-	//node6.next = NULL;
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = &node6;
+	node6.next = NULL;
+	ListNode* result = solution.reverseBetween(&node1,1,4);
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
 	//ListNode* result = solution.partition(&node1,3);

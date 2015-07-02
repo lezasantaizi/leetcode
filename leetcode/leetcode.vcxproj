@@ -118,6 +118,7 @@
     <ClCompile Include="removeElements.cpp" />
     <ClCompile Include="removeNthFromEnd.cpp" />
     <ClCompile Include="reverse.cpp" />
+    <ClCompile Include="reverseBetween.cpp" />
     <ClCompile Include="reverseBits.cpp" />
     <ClCompile Include="reverseList.cpp" />
     <ClCompile Include="longestConsecutive.cpp" />
@@ -184,6 +185,7 @@
     <ClInclude Include="removeElements.h" />
     <ClInclude Include="removeNthFromEnd.h" />
     <ClInclude Include="reverse.h" />
+    <ClInclude Include="reverseBetween.h" />
     <ClInclude Include="reverseBits.h" />
     <ClInclude Include="reverseList.h" />
     <ClInclude Include="longestConsecutive.h" />
