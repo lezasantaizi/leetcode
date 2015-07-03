@@ -207,6 +207,12 @@
     <ClCompile Include="reverseBetween.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sortedListToBST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kthSmallest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -396,6 +402,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="reverseBetween.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sortedListToBST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kthSmallest.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

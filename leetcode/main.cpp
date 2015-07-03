@@ -59,11 +59,12 @@
 #include "largestNumber.h"
 #include "findKthLargest.h"
 #include "reverseBetween.h"
+#include "kthSmallest.h"
 using namespace std;
 
 int main()
 {
-	Solution62 solution;
+	Solution64 solution;
 	
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -128,20 +129,20 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	ListNode node1(1);
-	ListNode node2(2);
-	ListNode node3(3);
-	ListNode node4(4);
-	ListNode node5(5);
-	ListNode node6(2);
+	//ListNode node1(1);
+	//ListNode node2(2);
+	//ListNode node3(3);
+	//ListNode node4(4);
+	//ListNode node5(5);
+	//ListNode node6(2);
 
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = &node4;
-	node4.next = &node5;
-	node5.next = &node6;
-	node6.next = NULL;
-	ListNode* result = solution.reverseBetween(&node1,1,4);
+	//node1.next = &node2;
+	//node2.next = &node3;
+	//node3.next = &node4;
+	//node4.next = &node5;
+	//node5.next = &node6;
+	//node6.next = NULL;
+	//ListNode* result = solution.reverseBetween(&node1,1,4);
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
 	//ListNode* result = solution.partition(&node1,3);
@@ -151,26 +152,27 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	//TreeNode temp1(1);
-	//TreeNode temp2(2);
-	//TreeNode temp3(3);
-	//TreeNode temp4(1);
-	//TreeNode temp5(2);
-	//TreeNode temp6(3);
+	TreeNode temp1(4);
+	TreeNode temp2(2);
+	TreeNode temp3(5);
+	TreeNode temp4(1);
+	TreeNode temp5(3);
+	TreeNode temp6(3);
 
-	//temp1.left = &temp2;
-	//temp1.right = &temp3;
-	//temp2.right = NULL;
-	//temp2.left = NULL;
-	//temp3.left = NULL;
-	//temp3.right = NULL;
-	//temp4.left = &temp5;
-	//temp5.left = NULL;
-	//temp5.right = NULL;
-	//temp4.right = &temp6;
+	temp1.left = &temp2;
+	temp1.right = &temp3;
+	temp2.right = &temp5;
+	temp2.left = &temp4;
+	temp3.left = NULL;
+	temp3.right = NULL;
+	temp4.left = NULL;
+	temp5.left = NULL;
+	temp5.right = NULL;
+	temp4.right = NULL;
 	//temp6.left = NULL;
 	//temp6.right = NULL;
 
+	int result = solution.kthSmallest(&temp1,4);
 
 	//struct ListNode node1(1);
 	//struct ListNode node2(7);

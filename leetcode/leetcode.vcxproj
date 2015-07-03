@@ -99,6 +99,7 @@
     <ClCompile Include="isSameTree.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
+    <ClCompile Include="kthSmallest.cpp" />
     <ClCompile Include="largestNumber.cpp" />
     <ClCompile Include="lengthOfLastWord.cpp" />
     <ClCompile Include="lengthOfLongestSubstring.cpp" />
@@ -126,6 +127,7 @@
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
     <ClCompile Include="searchInsert.cpp" />
+    <ClCompile Include="sortedListToBST.cpp" />
     <ClCompile Include="spiralOrder.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -167,6 +169,7 @@
     <ClInclude Include="isSameTree.h" />
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
+    <ClInclude Include="kthSmallest.h" />
     <ClInclude Include="largestNumber.h" />
     <ClInclude Include="lengthOfLastWord.h" />
     <ClInclude Include="lengthOfLongestSubstring.h" />
@@ -193,6 +196,7 @@
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
     <ClInclude Include="searchInsert.h" />
+    <ClInclude Include="sortedListToBST.h" />
     <ClInclude Include="spiralOrder.h" />
     <ClInclude Include="threeSum.h" />
     <ClInclude Include="threeSumClosest.h" />
