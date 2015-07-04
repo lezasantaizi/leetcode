@@ -89,6 +89,7 @@
     <ClCompile Include="getRow.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="hasPathSum.cpp" />
+    <ClCompile Include="inorderTraversal.cpp" />
     <ClCompile Include="invertTree.cpp" />
     <ClCompile Include="isBalanced.cpp" />
     <ClCompile Include="isHappy.cpp" />
@@ -128,6 +129,7 @@
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
     <ClCompile Include="searchInsert.cpp" />
+    <ClCompile Include="sortedArrayToBST.cpp" />
     <ClCompile Include="sortedListToBST.cpp" />
     <ClCompile Include="spiralOrder.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -160,6 +162,7 @@
     <ClInclude Include="getRow.h" />
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="hasPathSum.h" />
+    <ClInclude Include="inorderTraversal.h" />
     <ClInclude Include="invertTree.h" />
     <ClInclude Include="isBalanced.h" />
     <ClInclude Include="isHappy.h" />
@@ -198,6 +201,7 @@
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
     <ClInclude Include="searchInsert.h" />
+    <ClInclude Include="sortedArrayToBST.h" />
     <ClInclude Include="sortedListToBST.h" />
     <ClInclude Include="spiralOrder.h" />
     <ClInclude Include="threeSum.h" />

@@ -61,12 +61,14 @@
 //#include "reverseBetween.h"
 //#include "kthSmallest.h"
 //#include "recoverTree.h"
-#include "sortedListToBST.h"
+//#include "sortedListToBST.h"
+//#include "sortedArrayToBST.h"
+#include "inorderTraversal.h"
 using namespace std;
 
 int main()
 {
-	Solution63 solution;
+	Solution67 solution;
 	
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -77,11 +79,13 @@ int main()
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num;
-	num.push_back(3);
 	num.push_back(1);
 	num.push_back(2);
+	num.push_back(3);
 	num.push_back(4);
-	//num.push_back(1);
+	num.push_back(5);
+	num.push_back(6);
+	//TreeNode* result = solution.sortedArrayToBST(num);
 	
 	//int result = solution.findKthLargest(num,2);
 	//string result = solution.largestNumber(num);
@@ -131,20 +135,20 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	ListNode node1(1);
-	ListNode node2(2);
-	ListNode node3(3);
-	ListNode node4(4);
-	ListNode node5(5);
-	ListNode node6(6);
+	//ListNode node1(1);
+	//ListNode node2(2);
+	//ListNode node3(3);
+	//ListNode node4(4);
+	//ListNode node5(5);
+	//ListNode node6(6);
 
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = &node4;
-	node4.next = &node5;
-	node5.next = &node6;
-	node6.next = NULL;
-	TreeNode* result = solution.sortedListToBST(&node1);
+	//node1.next = &node2;
+	//node2.next = &node3;
+	//node3.next = &node4;
+	//node4.next = &node5;
+	//node5.next = &node6;
+	//node6.next = NULL;
+	//TreeNode* result = solution.sortedListToBST(&node1);
 	//ListNode* result = solution.reverseBetween(&node1,1,4);
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
@@ -172,6 +176,7 @@ int main()
 	temp5.left = NULL;
 	temp5.right = NULL;
 	temp4.right = NULL;
+	vector<int> result = solution.inorderTraversal(&temp1);
 	//temp6.left = NULL;
 	//temp6.right = NULL;
 

@@ -216,6 +216,12 @@
     <ClCompile Include="recoverTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sortedArrayToBST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inorderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -414,6 +420,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="recoverTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sortedArrayToBST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inorderTraversal.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
