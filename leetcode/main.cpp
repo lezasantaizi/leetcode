@@ -63,13 +63,14 @@
 //#include "recoverTree.h"
 //#include "sortedListToBST.h"
 //#include "sortedArrayToBST.h"
-#include "inorderTraversal.h"
+//#include "inorderTraversal.h"
+#include "numTrees.h"
 using namespace std;
 
 int main()
 {
-	Solution67 solution;
-	
+	Solution68 solution;
+	int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
 	
@@ -159,24 +160,24 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	TreeNode temp1(4);
-	TreeNode temp2(2);
-	TreeNode temp3(1);
-	TreeNode temp4(5);
-	TreeNode temp5(3);
-	TreeNode temp6(3);
+	//TreeNode temp1(4);
+	//TreeNode temp2(2);
+	//TreeNode temp3(1);
+	//TreeNode temp4(5);
+	//TreeNode temp5(3);
+	//TreeNode temp6(3);
 
-	temp1.left = &temp2;
-	temp1.right = &temp3;
-	temp2.right = &temp5;
-	temp2.left = &temp4;
-	temp3.left = NULL;
-	temp3.right = NULL;
-	temp4.left = NULL;
-	temp5.left = NULL;
-	temp5.right = NULL;
-	temp4.right = NULL;
-	vector<int> result = solution.inorderTraversal(&temp1);
+	//temp1.left = &temp2;
+	//temp1.right = &temp3;
+	//temp2.right = &temp5;
+	//temp2.left = &temp4;
+	//temp3.left = NULL;
+	//temp3.right = NULL;
+	//temp4.left = NULL;
+	//temp5.left = NULL;
+	//temp5.right = NULL;
+	//temp4.right = NULL;
+	//vector<int> result = solution.inorderTraversal(&temp1);
 	//temp6.left = NULL;
 	//temp6.right = NULL;
 
