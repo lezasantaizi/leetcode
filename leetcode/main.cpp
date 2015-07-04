@@ -49,22 +49,24 @@
 //#include"twoSum.h"
 //#include"threeSum.h"
 //#include"fourSum.h"
-#include "isPalindrome2.h"
-#include "searchInsert.h"
-#include "lengthOfLongestSubstring.h"
-#include "isNumber.h"
-#include "combinationSum3.h"
-#include "combine.h"
-#include "calculate.h"
-#include "largestNumber.h"
-#include "findKthLargest.h"
-#include "reverseBetween.h"
-#include "kthSmallest.h"
+//#include "isPalindrome2.h"
+//#include "searchInsert.h"
+//#include "lengthOfLongestSubstring.h"
+//#include "isNumber.h"
+//#include "combinationSum3.h"
+//#include "combine.h"
+//#include "calculate.h"
+//#include "largestNumber.h"
+//#include "findKthLargest.h"
+//#include "reverseBetween.h"
+//#include "kthSmallest.h"
+//#include "recoverTree.h"
+#include "sortedListToBST.h"
 using namespace std;
 
 int main()
 {
-	Solution64 solution;
+	Solution63 solution;
 	
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -129,19 +131,20 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	//ListNode node1(1);
-	//ListNode node2(2);
-	//ListNode node3(3);
-	//ListNode node4(4);
-	//ListNode node5(5);
-	//ListNode node6(2);
+	ListNode node1(1);
+	ListNode node2(2);
+	ListNode node3(3);
+	ListNode node4(4);
+	ListNode node5(5);
+	ListNode node6(6);
 
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node5;
-	//node5.next = &node6;
-	//node6.next = NULL;
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = &node6;
+	node6.next = NULL;
+	TreeNode* result = solution.sortedListToBST(&node1);
 	//ListNode* result = solution.reverseBetween(&node1,1,4);
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
@@ -154,8 +157,8 @@ int main()
 
 	TreeNode temp1(4);
 	TreeNode temp2(2);
-	TreeNode temp3(5);
-	TreeNode temp4(1);
+	TreeNode temp3(1);
+	TreeNode temp4(5);
 	TreeNode temp5(3);
 	TreeNode temp6(3);
 
@@ -172,7 +175,9 @@ int main()
 	//temp6.left = NULL;
 	//temp6.right = NULL;
 
-	int result = solution.kthSmallest(&temp1,4);
+	//int result = solution.kthSmallest(&temp1,4);
+	//solution.recoverTree(&temp1);
+	
 
 	//struct ListNode node1(1);
 	//struct ListNode node2(7);

@@ -115,6 +115,7 @@
     <ClCompile Include="plusOne.cpp" />
     <ClCompile Include="Queues2stack.cpp" />
     <ClCompile Include="rangeBitwiseAnd.cpp" />
+    <ClCompile Include="recoverTree.cpp" />
     <ClCompile Include="removeElement.cpp" />
     <ClCompile Include="removeElements.cpp" />
     <ClCompile Include="removeNthFromEnd.cpp" />
@@ -184,6 +185,7 @@
     <ClInclude Include="plusOne.h" />
     <ClInclude Include="Queues2stack.h" />
     <ClInclude Include="rangeBitwiseAnd.h" />
+    <ClInclude Include="recoverTree.h" />
     <ClInclude Include="removeElement.h" />
     <ClInclude Include="removeElements.h" />
     <ClInclude Include="removeNthFromEnd.h" />
