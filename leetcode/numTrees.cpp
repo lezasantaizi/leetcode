@@ -41,5 +41,7 @@ int Solution68::numTrees(int n)
 		}
 		saveTemp[i] = sum;
 	}
-	return saveTemp[n];
+	int result = saveTemp[n];
+	free(saveTemp);
+	return result;
 }
