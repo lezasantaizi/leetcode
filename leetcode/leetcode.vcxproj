@@ -105,6 +105,7 @@
     <ClCompile Include="lengthOfLastWord.cpp" />
     <ClCompile Include="lengthOfLongestSubstring.cpp" />
     <ClCompile Include="levelOrder.cpp" />
+    <ClCompile Include="levelOrderBottom.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="maxDepth.cpp" />
@@ -180,6 +181,7 @@
     <ClInclude Include="lengthOfLastWord.h" />
     <ClInclude Include="lengthOfLongestSubstring.h" />
     <ClInclude Include="levelOrder.h" />
+    <ClInclude Include="levelOrderBottom.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="maxDepth.h" />
     <ClInclude Include="merge.h" />

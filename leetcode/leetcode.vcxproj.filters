@@ -228,6 +228,9 @@
     <ClCompile Include="rightSideView.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="levelOrderBottom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -438,6 +441,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="rightSideView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="levelOrderBottom.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
