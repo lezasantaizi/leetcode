@@ -66,12 +66,13 @@
 //#include "inorderTraversal.h"
 //#include "numTrees.h"
 //#include "rightSideView.h"
-#include "levelOrderBottom.h"
+//#include "levelOrderBottom.h"
+#include "preorderTraversal.h"
 using namespace std;
 
 int main()
 {
-	Solution70 solution;
+	Solution71 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -179,7 +180,8 @@ int main()
 	temp5.left = NULL;
 	temp5.right = NULL;
 	temp4.right = NULL;
-	vector<vector<int>> result = solution.levelOrderBottom(&temp1);
+	vector<int> result = solution.preorderTraversal(&temp1);
+	//vector<vector<int>> result = solution.levelOrderBottom(&temp1);
 	//vector<int> result = solution.rightSideView(&temp1);
 	//vector<int> result = solution.inorderTraversal(&temp1);
 	//temp6.left = NULL;

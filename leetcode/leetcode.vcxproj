@@ -116,6 +116,7 @@
     <ClCompile Include="partition.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
+    <ClCompile Include="preorderTraversal.cpp" />
     <ClCompile Include="Queues2stack.cpp" />
     <ClCompile Include="rangeBitwiseAnd.cpp" />
     <ClCompile Include="recoverTree.cpp" />
@@ -191,6 +192,7 @@
     <ClInclude Include="partition.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
+    <ClInclude Include="preorderTraversal.h" />
     <ClInclude Include="Queues2stack.h" />
     <ClInclude Include="rangeBitwiseAnd.h" />
     <ClInclude Include="recoverTree.h" />
