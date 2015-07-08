@@ -114,6 +114,7 @@
     <ClCompile Include="myAtoi.cpp" />
     <ClCompile Include="numTrees.cpp" />
     <ClCompile Include="partition.cpp" />
+    <ClCompile Include="pathSum.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
     <ClCompile Include="preorderTraversal.cpp" />
@@ -190,6 +191,7 @@
     <ClInclude Include="myAtoi.h" />
     <ClInclude Include="numTrees.h" />
     <ClInclude Include="partition.h" />
+    <ClInclude Include="pathSum.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
     <ClInclude Include="preorderTraversal.h" />

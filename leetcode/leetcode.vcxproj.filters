@@ -234,6 +234,9 @@
     <ClCompile Include="preorderTraversal.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="pathSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -450,6 +453,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="preorderTraversal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pathSum.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
