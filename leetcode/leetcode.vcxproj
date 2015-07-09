@@ -74,6 +74,7 @@
     <ClCompile Include="combine.cpp" />
     <ClCompile Include="compareVersion.cpp" />
     <ClCompile Include="computeArea.cpp" />
+    <ClCompile Include="connect.cpp" />
     <ClCompile Include="containsDuplicate.cpp" />
     <ClCompile Include="containsNearbyDuplicate.cpp" />
     <ClCompile Include="convert.cpp" />
@@ -154,6 +155,7 @@
     <ClInclude Include="combine.h" />
     <ClInclude Include="compareVersion.h" />
     <ClInclude Include="computeArea.h" />
+    <ClInclude Include="connect.h" />
     <ClInclude Include="containsDuplicate.h" />
     <ClInclude Include="containsNearbyDuplicate.h" />
     <ClInclude Include="convert.h" />

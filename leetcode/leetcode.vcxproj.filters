@@ -237,6 +237,9 @@
     <ClCompile Include="pathSum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="connect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -456,6 +459,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="pathSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="connect.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

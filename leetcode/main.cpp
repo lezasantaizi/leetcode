@@ -69,11 +69,12 @@
 //#include "levelOrderBottom.h"
 //#include "preorderTraversal.h"
 #include "pathSum.h"
+#include "connect.h"
 using namespace std;
 
 int main()
 {
-	Solution72 solution;
+	Solution73 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -197,7 +198,7 @@ int main()
 	temp9.right = NULL;
 	temp10.left = NULL;
 	temp10.right = NULL;
-	vector<vector<int>> result = solution.pathSum(&temp1,22);
+	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.preorderTraversal(&temp1);
 	//vector<vector<int>> result = solution.levelOrderBottom(&temp1);
 	//vector<int> result = solution.rightSideView(&temp1);
@@ -224,6 +225,24 @@ int main()
 	//bool result = solution.isSameTree(&temp1,&temp4);
 	//int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
 
+	TreeLinkNode node1(1);
+	TreeLinkNode node2(2);
+	TreeLinkNode node3(3);
+	TreeLinkNode node4(4);
+	TreeLinkNode node5(5);
+
+	node1.left = &node2;
+	node1.right = &node3;
+	node2.left = &node4;
+	node2.right = &node5;
+	node3.left = NULL;
+	node3.right = NULL;
+	node4.left = NULL;
+	node4.right = NULL;
+	node5.left = NULL;
+	node5.right = NULL;
+
+	solution.connect(&node1);
 
 	return 0;
 }
