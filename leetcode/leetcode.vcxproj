@@ -101,6 +101,7 @@
     <ClCompile Include="isSameTree.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
+    <ClCompile Include="isValidBST.cpp" />
     <ClCompile Include="kthSmallest.cpp" />
     <ClCompile Include="largestNumber.cpp" />
     <ClCompile Include="lengthOfLastWord.cpp" />
@@ -180,6 +181,7 @@
     <ClInclude Include="isSameTree.h" />
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
+    <ClInclude Include="isValidBST.h" />
     <ClInclude Include="kthSmallest.h" />
     <ClInclude Include="largestNumber.h" />
     <ClInclude Include="lengthOfLastWord.h" />
