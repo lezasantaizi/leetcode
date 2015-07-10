@@ -82,6 +82,7 @@
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="deleteDuplicates.cpp" />
     <ClCompile Include="findKthLargest.cpp" />
+    <ClCompile Include="flatten.cpp" />
     <ClCompile Include="fourSum.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -164,6 +165,7 @@
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="deleteDuplicates.h" />
     <ClInclude Include="findKthLargest.h" />
+    <ClInclude Include="flatten.h" />
     <ClInclude Include="fourSum.h" />
     <ClInclude Include="generate.h" />
     <ClInclude Include="getIntersectionNode.h" />

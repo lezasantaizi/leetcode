@@ -70,12 +70,13 @@
 //#include "preorderTraversal.h"
 //#include "pathSum.h"
 //#include "connect.h"
-#include "isValidBST.h"
+//#include "isValidBST.h"
+#include "flatten.h"
 using namespace std;
 
 int main()
 {
-	Solution74 solution;
+	Solution75 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -179,27 +180,28 @@ int main()
 
 
 	temp1.left = &temp2;
-	temp1.right = &temp6;
+	temp1.right = &temp3;
 	
-	temp2.left = &temp3;
+	temp2.left = NULL;
 	temp2.right = NULL;
-	temp3.left = &temp4;
-	temp3.right = &temp5;
-	temp4.left = NULL;
-	temp4.right = NULL;
-	temp5.left = NULL;
-	temp5.right = NULL;
-	temp6.left = &temp7;
-	temp6.right = &temp8;
-	temp7.left = NULL;
-	temp7.right = NULL;
-	temp8.left = &temp9;
-	temp8.right = &temp10;
-	temp9.left = NULL;
-	temp9.right = NULL;
-	temp10.left = NULL;
-	temp10.right = NULL;
-	bool result = solution.isValidBST(&temp1);
+	temp3.left = NULL;
+	temp3.right = NULL;
+	solution.flatten(&temp1);
+	//temp4.left = NULL;
+	//temp4.right = NULL;
+	//temp5.left = NULL;
+	//temp5.right = NULL;
+	//temp6.left = &temp7;
+	//temp6.right = &temp8;
+	//temp7.left = NULL;
+	//temp7.right = NULL;
+	//temp8.left = &temp9;
+	//temp8.right = &temp10;
+	//temp9.left = NULL;
+	//temp9.right = NULL;
+	//temp10.left = NULL;
+	//temp10.right = NULL;
+	//bool result = solution.isValidBST(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.preorderTraversal(&temp1);
 	//vector<vector<int>> result = solution.levelOrderBottom(&temp1);
