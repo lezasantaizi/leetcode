@@ -148,6 +148,7 @@
     <ClCompile Include="titleToNumber.cpp" />
     <ClCompile Include="trailingZeroes.cpp" />
     <ClCompile Include="twoSum.cpp" />
+    <ClCompile Include="zigzagLevelOrder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addBinary.h" />
@@ -227,6 +228,7 @@
     <ClInclude Include="titleToNumber.h" />
     <ClInclude Include="trailingZeroes.h" />
     <ClInclude Include="twoSum.h" />
+    <ClInclude Include="zigzagLevelOrder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -68,16 +68,17 @@
 //#include "rightSideView.h"
 //#include "levelOrderBottom.h"
 //#include "preorderTraversal.h"
-#include "pathSum.h"
+//#include "pathSum.h"
 //#include "connect.h"
 //#include "isValidBST.h"
 //#include "flatten.h"
 //#include"postorderTraversal.h"
+#include "zigzagLevelOrder.h"
 using namespace std;
 
 int main()
 {
-	Solution72 solution;
+	Solution77 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -168,11 +169,11 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	TreeNode temp1(5);
-	TreeNode temp2(4);
-	TreeNode temp3(11);
-	TreeNode temp4(7);
-	TreeNode temp5(2);
+	TreeNode temp1(3);
+	TreeNode temp2(9);
+	TreeNode temp3(20);
+	TreeNode temp4(15);
+	TreeNode temp5(7);
 	TreeNode temp6(8);
 	TreeNode temp7(13);
 	TreeNode temp8(4);
@@ -181,9 +182,9 @@ int main()
 
 
 	temp1.left = &temp2;
-	temp1.right = &temp6;
+	temp1.right = &temp3;
 	
-	temp2.left = &temp3;
+	temp2.left = NULL;
 	temp2.right = NULL;
 	temp3.left = &temp4;
 	temp3.right = &temp5;
@@ -205,7 +206,8 @@ int main()
 	temp10.left = NULL;
 	temp10.right = NULL;
 	//bool result = solution.isValidBST(&temp1);
-	vector<vector<int>> result = solution.pathSum(&temp1,22);
+	vector<vector<int>> result = solution.zigzagLevelOrder(&temp1);
+	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.preorderTraversal(&temp1);
 	//vector<vector<int>> result = solution.levelOrderBottom(&temp1);
 	//vector<int> result = solution.rightSideView(&temp1);
