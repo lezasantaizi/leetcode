@@ -68,16 +68,16 @@
 //#include "rightSideView.h"
 //#include "levelOrderBottom.h"
 //#include "preorderTraversal.h"
-//#include "pathSum.h"
+#include "pathSum.h"
 //#include "connect.h"
 //#include "isValidBST.h"
 //#include "flatten.h"
-#include"postorderTraversal.h"
+//#include"postorderTraversal.h"
 using namespace std;
 
 int main()
 {
-	Solution76 solution;
+	Solution72 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -170,41 +170,42 @@ int main()
 
 	TreeNode temp1(5);
 	TreeNode temp2(4);
-	TreeNode temp3(2);
-	TreeNode temp4(3);
-	TreeNode temp5(1);
-	TreeNode temp6(7);
-	TreeNode temp7(6);
-	TreeNode temp8(9);
-	TreeNode temp9(8);
-	TreeNode temp10(10);
+	TreeNode temp3(11);
+	TreeNode temp4(7);
+	TreeNode temp5(2);
+	TreeNode temp6(8);
+	TreeNode temp7(13);
+	TreeNode temp8(4);
+	TreeNode temp9(5);
+	TreeNode temp10(1);
 
 
 	temp1.left = &temp2;
-	temp1.right = &temp3;
+	temp1.right = &temp6;
 	
-	temp2.left = NULL;
+	temp2.left = &temp3;
 	temp2.right = NULL;
-	temp3.left = NULL;
-	temp3.right = NULL;
+	temp3.left = &temp4;
+	temp3.right = &temp5;
 	//solution.flatten(&temp1);
-	vector<int> result = solution.postorderTraversal(&temp1);
-	//temp4.left = NULL;
-	//temp4.right = NULL;
-	//temp5.left = NULL;
-	//temp5.right = NULL;
-	//temp6.left = &temp7;
-	//temp6.right = &temp8;
-	//temp7.left = NULL;
-	//temp7.right = NULL;
-	//temp8.left = &temp9;
-	//temp8.right = &temp10;
-	//temp9.left = NULL;
-	//temp9.right = NULL;
-	//temp10.left = NULL;
-	//temp10.right = NULL;
-	//bool result = solution.isValidBST(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
+	//vector<int> result = solution.postorderTraversal(&temp1);
+	temp4.left = NULL;
+	temp4.right = NULL;
+	temp5.left = NULL;
+	temp5.right = NULL;
+	temp6.left = &temp7;
+	temp6.right = &temp8;
+	temp7.left = NULL;
+	temp7.right = NULL;
+	temp8.left = &temp9;
+	temp8.right = &temp10;
+	temp9.left = NULL;
+	temp9.right = NULL;
+	temp10.left = NULL;
+	temp10.right = NULL;
+	//bool result = solution.isValidBST(&temp1);
+	vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.preorderTraversal(&temp1);
 	//vector<vector<int>> result = solution.levelOrderBottom(&temp1);
 	//vector<int> result = solution.rightSideView(&temp1);

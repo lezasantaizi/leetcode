@@ -28,9 +28,10 @@ vector<vector<int>> Solution72::pathSum(TreeNode* root, int sum)
 	//func(result,root,sum,tempData);
 	//return result;
 
-	//方法2：答案不对！
+	//方法2：
 	vector<vector<int>> result ;
 	vector<int> tempData;
+	vector<int> flag ;
 	stack<TreeNode*> saveTree;
 	while (root || saveTree.empty() != true)
 	{
@@ -38,18 +39,27 @@ vector<vector<int>> Solution72::pathSum(TreeNode* root, int sum)
 		{
 			sum -= root->val;
 			tempData.push_back(root->val);
+			flag.push_back(0);
 			saveTree.push(root);
 			root = root->left;
 		}
 
-		root = saveTree.top();
-		root = root->right;
-		if (root == NULL)
+		while (flag.size() != 0 && flag.back() == 1 )
 		{
-			result.push_back(tempData);
-
+			TreeNode* temp = saveTree.top();
+			if(sum == 0 && temp->left == NULL && temp->right == NULL)
+				result.push_back(tempData);
+			sum += temp->val;
+			tempData.pop_back();
+			saveTree.pop();
+			flag.pop_back();
 		}
-		saveTree.pop();
+		if(saveTree.size() != 0)
+		{
+			root = saveTree.top();
+			root = root->right;
+			flag[flag.size() -1 ] = 1;
+		}
 	}
 	return result;
 }
