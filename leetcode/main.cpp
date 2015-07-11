@@ -71,12 +71,13 @@
 //#include "pathSum.h"
 //#include "connect.h"
 //#include "isValidBST.h"
-#include "flatten.h"
+//#include "flatten.h"
+#include"postorderTraversal.h"
 using namespace std;
 
 int main()
 {
-	Solution75 solution;
+	Solution76 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -186,7 +187,8 @@ int main()
 	temp2.right = NULL;
 	temp3.left = NULL;
 	temp3.right = NULL;
-	solution.flatten(&temp1);
+	//solution.flatten(&temp1);
+	vector<int> result = solution.postorderTraversal(&temp1);
 	//temp4.left = NULL;
 	//temp4.right = NULL;
 	//temp5.left = NULL;

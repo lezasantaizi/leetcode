@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -120,6 +120,7 @@
     <ClCompile Include="pathSum.cpp" />
     <ClCompile Include="permuteUnique.cpp" />
     <ClCompile Include="plusOne.cpp" />
+    <ClCompile Include="postorderTraversal.cpp" />
     <ClCompile Include="preorderTraversal.cpp" />
     <ClCompile Include="Queues2stack.cpp" />
     <ClCompile Include="rangeBitwiseAnd.cpp" />
@@ -200,6 +201,7 @@
     <ClInclude Include="pathSum.h" />
     <ClInclude Include="permuteUnique.h" />
     <ClInclude Include="plusOne.h" />
+    <ClInclude Include="postorderTraversal.h" />
     <ClInclude Include="preorderTraversal.h" />
     <ClInclude Include="Queues2stack.h" />
     <ClInclude Include="rangeBitwiseAnd.h" />

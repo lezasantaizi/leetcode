@@ -246,6 +246,9 @@
     <ClCompile Include="flatten.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="postorderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -474,6 +477,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="flatten.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="postorderTraversal.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
