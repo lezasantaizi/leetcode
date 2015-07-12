@@ -73,12 +73,13 @@
 //#include "isValidBST.h"
 //#include "flatten.h"
 //#include"postorderTraversal.h"
-#include "zigzagLevelOrder.h"
+//#include "zigzagLevelOrder.h"
+#include "countNodes.h"
 using namespace std;
 
 int main()
 {
-	Solution77 solution;
+	Solution78 solution;
 	//int result = solution.numTrees(5);
 	int nums[3]= {898,89,7};
 	//char* result2 = largestNumber(nums, 3) ;
@@ -184,10 +185,10 @@ int main()
 	temp1.left = &temp2;
 	temp1.right = &temp3;
 	
-	temp2.left = NULL;
-	temp2.right = NULL;
-	temp3.left = &temp4;
-	temp3.right = &temp5;
+	temp3.left = NULL;
+	temp3.right = NULL;
+	temp2.left = &temp4;
+	temp2.right = &temp5;
 	//solution.flatten(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.postorderTraversal(&temp1);
@@ -206,7 +207,8 @@ int main()
 	temp10.left = NULL;
 	temp10.right = NULL;
 	//bool result = solution.isValidBST(&temp1);
-	vector<vector<int>> result = solution.zigzagLevelOrder(&temp1);
+	//vector<vector<int>> result = solution.zigzagLevelOrder(&temp1);
+	int result = solution.countNodes(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.preorderTraversal(&temp1);
 	//vector<vector<int>> result = solution.levelOrderBottom(&temp1);

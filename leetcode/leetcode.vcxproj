@@ -79,6 +79,7 @@
     <ClCompile Include="containsNearbyDuplicate.cpp" />
     <ClCompile Include="convert.cpp" />
     <ClCompile Include="convertToTitle.cpp" />
+    <ClCompile Include="countNodes.cpp" />
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="deleteDuplicates.cpp" />
     <ClCompile Include="findKthLargest.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="containsNearbyDuplicate.h" />
     <ClInclude Include="convert.h" />
     <ClInclude Include="convertToTitle.h" />
+    <ClInclude Include="countNodes.h" />
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="deleteDuplicates.h" />
     <ClInclude Include="findKthLargest.h" />
