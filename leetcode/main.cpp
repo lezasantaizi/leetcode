@@ -75,15 +75,90 @@
 //#include"postorderTraversal.h"
 //#include "zigzagLevelOrder.h"
 //#include "countNodes.h"
-#include "BSTIterator.h"
+//#include "BSTIterator.h"
+#include "buildTree.h"
 using namespace std;
+
+
+//struct TreeNode {
+//	int val;
+//	struct TreeNode *left;
+//	struct TreeNode *right;
+//};
+//
+//void func(struct TreeNode* result ,int* preorder, int preorderSize, int* inorder, int inorderSize)
+//{
+//	if(preorderSize == 0)
+//		return ;
+//	result->val = preorder[0];
+//	int* leftorder_pre = NULL;
+//	int* leftorder_in = NULL;
+//	int leftorder_size = 0;
+//	int* rightorder_pre = NULL;
+//	int* rightorder_in = NULL;
+//	int rightoder_size = 0;
+//	int i = 0;
+//	for ( i = 0; i< preorderSize;i++)
+//	{
+//		if(inorder[i] == preorder[0])
+//			break;
+//	}
+//	leftorder_size = i;
+//	if(leftorder_size == 0)
+//	{
+//		leftorder_in = NULL;
+//		leftorder_pre = NULL;
+//	}
+//	else
+//	{
+//		leftorder_in = inorder;
+//		leftorder_pre = &preorder[1];
+//	}
+//	rightoder_size = preorderSize - 1 - i;
+//	if(rightoder_size == 0)
+//	{
+//		rightorder_in = NULL;
+//		rightorder_pre = NULL;
+//	}
+//	else
+//	{
+//		rightorder_in = &inorder[i+1];
+//		rightorder_pre = &preorder[i+1];
+//	}
+//
+//	struct TreeNode* node_left = (struct TreeNode*)malloc(sizeof(TreeNode*));
+//	node_left->left = NULL;
+//	node_left->right = NULL;
+//	struct TreeNode* node_right = (struct TreeNode*)malloc(sizeof(TreeNode*));
+//	node_right->left = NULL;
+//	node_right->right = NULL;
+//	if(leftorder_size != 0)
+//	{
+//		result->left = node_left;
+//		func(node_left,leftorder_pre,leftorder_size,leftorder_in,leftorder_size);
+//	}
+//	if (rightoder_size != 0)
+//	{
+//		result->right = node_right;
+//		func(node_right,rightorder_pre,rightoder_size,rightorder_in,rightoder_size);
+//	}
+//}
+//
+//struct TreeNode* buildTree(int* preorder, int preorderSize, int* inorder, int inorderSize) 
+//{
+//	struct TreeNode* result = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+//	func(result,preorder,preorderSize,inorder,inorderSize);
+//	return result;
+//}
 
 int main()
 {
-	//Solution78 solution;
+	Solution80 solution;
 
 	//int result = solution.numTrees(5);
-	int nums[3]= {898,89,7};
+	//int nums1[5]= {3,9,15,7,20};
+	//int nums2[5]= {15,9,7,3,20};
+	//struct TreeNode* result = buildTree(nums1,5,nums2,5);
 	//char* result2 = largestNumber(nums, 3) ;
 	
 	//int result = solution.calculate("(1+2)+3");//("1 - (1+2+(3 - 2))") ;
@@ -91,20 +166,27 @@ int main()
 	//vector<vector<int>> result = solution.combinationSum3(3,9);
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
-	vector<int> num;
-	num.push_back(1);
-	num.push_back(2);
-	num.push_back(3);
-	num.push_back(4);
-	num.push_back(5);
-	num.push_back(6);
+	vector<int> num1;
+	num1.push_back(15);
+	num1.push_back(9);
+	num1.push_back(7);
+	num1.push_back(3);
+	num1.push_back(20);
+
+	vector<int> num2;
+	num2.push_back(3);
+	num2.push_back(9);
+	num2.push_back(15);
+	num2.push_back(7);
+	num2.push_back(20);
+	TreeNode* result = solution.buildTree(num2,num1);
 	//TreeNode* result = solution.sortedArrayToBST(num);
 	
 	//int result = solution.findKthLargest(num,2);
 	//string result = solution.largestNumber(num);
 	//int result = solution.lengthOfLongestSubstring("dvdf");
 	//int result = solution.searchInsert(num,-10);
-	num.push_back(1);
+	//num.push_back(1);
 	//num.push_back(2);
 	//num.push_back(2);
 	//num.push_back(2);
@@ -116,12 +198,12 @@ int main()
 	//num.push_back(6);
 
 	//{-1 0 1 2 -1 -4},
-	num.push_back(-1);
-	num.push_back(0);
-	num.push_back(1);
-	num.push_back(2);
-	num.push_back(-1);
-	num.push_back(4);
+	//num.push_back(-1);
+	//num.push_back(0);
+	//num.push_back(1);
+	//num.push_back(2);
+	//num.push_back(-1);
+	//num.push_back(4);
 
 
 
@@ -172,44 +254,44 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	TreeNode temp1(3);
-	TreeNode temp2(9);
-	TreeNode temp3(20);
-	TreeNode temp4(15);
-	TreeNode temp5(7);
-	TreeNode temp6(8);
-	TreeNode temp7(13);
-	TreeNode temp8(4);
-	TreeNode temp9(5);
-	TreeNode temp10(1);
+	//TreeNode temp1(3);
+	//TreeNode temp2(9);
+	//TreeNode temp3(20);
+	//TreeNode temp4(15);
+	//TreeNode temp5(7);
+	//TreeNode temp6(8);
+	//TreeNode temp7(13);
+	//TreeNode temp8(4);
+	//TreeNode temp9(5);
+	//TreeNode temp10(1);
 
 
-	temp1.left = &temp2;
-	temp1.right = &temp3;
-	
-	temp3.left = NULL;
-	temp3.right = NULL;
-	temp2.left = &temp4;
-	temp2.right = &temp5;
-	//solution.flatten(&temp1);
-	//vector<vector<int>> result = solution.pathSum(&temp1,22);
-	//vector<int> result = solution.postorderTraversal(&temp1);
-	temp4.left = NULL;
-	temp4.right = NULL;
-	temp5.left = NULL;
-	temp5.right = NULL;
-	temp6.left = &temp7;
-	temp6.right = &temp8;
-	temp7.left = NULL;
-	temp7.right = NULL;
-	temp8.left = &temp9;
-	temp8.right = &temp10;
-	temp9.left = NULL;
-	temp9.right = NULL;
-	temp10.left = NULL;
-	temp10.right = NULL;
-	BSTIterator79 i = BSTIterator79(&temp1);
-	while (i.hasNext()) cout << i.next()<<endl;
+	//temp1.left = &temp2;
+	//temp1.right = &temp3;
+	//
+	//temp3.left = NULL;
+	//temp3.right = NULL;
+	//temp2.left = &temp4;
+	//temp2.right = &temp5;
+	////solution.flatten(&temp1);
+	////vector<vector<int>> result = solution.pathSum(&temp1,22);
+	////vector<int> result = solution.postorderTraversal(&temp1);
+	//temp4.left = NULL;
+	//temp4.right = NULL;
+	//temp5.left = NULL;
+	//temp5.right = NULL;
+	//temp6.left = &temp7;
+	//temp6.right = &temp8;
+	//temp7.left = NULL;
+	//temp7.right = NULL;
+	//temp8.left = &temp9;
+	//temp8.right = &temp10;
+	//temp9.left = NULL;
+	//temp9.right = NULL;
+	//temp10.left = NULL;
+	//temp10.right = NULL;
+	//BSTIterator79 i = BSTIterator79(&temp1);
+	//while (i.hasNext()) cout << i.next()<<endl;
 	//bool result = solution.isValidBST(&temp1);
 	//vector<vector<int>> result = solution.zigzagLevelOrder(&temp1);
 	//int result = solution.countNodes(&temp1);
