@@ -76,7 +76,8 @@
 //#include "zigzagLevelOrder.h"
 //#include "countNodes.h"
 //#include "BSTIterator.h"
-#include "buildTree.h"
+//#include "buildTree.h"
+#include "sumNumbers.h"
 using namespace std;
 
 
@@ -153,7 +154,7 @@ using namespace std;
 
 int main()
 {
-	Solution80 solution;
+	Solution81 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -179,7 +180,7 @@ int main()
 	num2.push_back(15);
 	num2.push_back(7);
 	num2.push_back(20);
-	TreeNode* result = solution.buildTree(num2,num1);
+	//TreeNode* result = solution.buildTree(num2,num1);
 	//TreeNode* result = solution.sortedArrayToBST(num);
 	
 	//int result = solution.findKthLargest(num,2);
@@ -254,42 +255,43 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	//TreeNode temp1(3);
-	//TreeNode temp2(9);
-	//TreeNode temp3(20);
-	//TreeNode temp4(15);
-	//TreeNode temp5(7);
-	//TreeNode temp6(8);
-	//TreeNode temp7(13);
-	//TreeNode temp8(4);
-	//TreeNode temp9(5);
-	//TreeNode temp10(1);
+	TreeNode temp1(3);
+	TreeNode temp2(9);
+	TreeNode temp3(1);
+	TreeNode temp4(5);
+	TreeNode temp5(7);
+	TreeNode temp6(8);
+	TreeNode temp7(13);
+	TreeNode temp8(4);
+	TreeNode temp9(5);
+	TreeNode temp10(1);
 
 
-	//temp1.left = &temp2;
-	//temp1.right = &temp3;
-	//
-	//temp3.left = NULL;
-	//temp3.right = NULL;
-	//temp2.left = &temp4;
-	//temp2.right = &temp5;
-	////solution.flatten(&temp1);
-	////vector<vector<int>> result = solution.pathSum(&temp1,22);
+	temp1.left = &temp2;
+	temp1.right = &temp3;
+	
+	temp3.left = NULL;
+	temp3.right = NULL;
+	temp2.left = &temp4;
+	temp2.right = &temp5;
+	//solution.flatten(&temp1);
+	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	////vector<int> result = solution.postorderTraversal(&temp1);
-	//temp4.left = NULL;
-	//temp4.right = NULL;
-	//temp5.left = NULL;
-	//temp5.right = NULL;
-	//temp6.left = &temp7;
-	//temp6.right = &temp8;
-	//temp7.left = NULL;
-	//temp7.right = NULL;
-	//temp8.left = &temp9;
-	//temp8.right = &temp10;
-	//temp9.left = NULL;
-	//temp9.right = NULL;
-	//temp10.left = NULL;
-	//temp10.right = NULL;
+	temp4.left = NULL;
+	temp4.right = NULL;
+	temp5.left = NULL;
+	temp5.right = NULL;
+	temp6.left = &temp7;
+	temp6.right = &temp8;
+	temp7.left = NULL;
+	temp7.right = NULL;
+	temp8.left = &temp9;
+	temp8.right = &temp10;
+	temp9.left = NULL;
+	temp9.right = NULL;
+	temp10.left = NULL;
+	temp10.right = NULL;
+	int result = solution.sumNumbers(&temp1);
 	//BSTIterator79 i = BSTIterator79(&temp1);
 	//while (i.hasNext()) cout << i.next()<<endl;
 	//bool result = solution.isValidBST(&temp1);
