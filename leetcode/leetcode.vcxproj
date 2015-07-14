@@ -72,6 +72,7 @@
     <ClCompile Include="buildTree.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="buildTree2.cpp" />
     <ClCompile Include="calculate.cpp" />
     <ClCompile Include="climbStairs.cpp" />
     <ClCompile Include="combinationSum3.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="addTwoNumbers.h" />
     <ClInclude Include="BSTIterator.h" />
     <ClInclude Include="buildTree.h" />
+    <ClInclude Include="buildTree2.h" />
     <ClInclude Include="calculate.h" />
     <ClInclude Include="climbStairs.h" />
     <ClInclude Include="combinationSum3.h" />

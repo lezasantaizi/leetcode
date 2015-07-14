@@ -77,7 +77,8 @@
 //#include "countNodes.h"
 //#include "BSTIterator.h"
 //#include "buildTree.h"
-#include "sumNumbers.h"
+//#include "sumNumbers.h"
+#include "buildTree2.h"
 using namespace std;
 
 
@@ -154,7 +155,7 @@ using namespace std;
 
 int main()
 {
-	Solution81 solution;
+	Solution82 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -175,12 +176,12 @@ int main()
 	num1.push_back(20);
 
 	vector<int> num2;
-	num2.push_back(3);
-	num2.push_back(9);
 	num2.push_back(15);
 	num2.push_back(7);
+	num2.push_back(9);
 	num2.push_back(20);
-	//TreeNode* result = solution.buildTree(num2,num1);
+	num2.push_back(3);
+	TreeNode* result = solution.buildTree(num1,num2);
 	//TreeNode* result = solution.sortedArrayToBST(num);
 	
 	//int result = solution.findKthLargest(num,2);
@@ -291,7 +292,7 @@ int main()
 	temp9.right = NULL;
 	temp10.left = NULL;
 	temp10.right = NULL;
-	int result = solution.sumNumbers(&temp1);
+	//int result = solution.sumNumbers(&temp1);
 	//BSTIterator79 i = BSTIterator79(&temp1);
 	//while (i.hasNext()) cout << i.next()<<endl;
 	//bool result = solution.isValidBST(&temp1);
