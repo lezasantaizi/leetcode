@@ -78,7 +78,8 @@
 //#include "BSTIterator.h"
 //#include "buildTree.h"
 //#include "sumNumbers.h"
-#include "buildTree2.h"
+//#include "buildTree2.h"
+#include "lowestCommonAncestor.h"
 using namespace std;
 
 
@@ -155,7 +156,7 @@ using namespace std;
 
 int main()
 {
-	Solution82 solution;
+	Solution83 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -181,7 +182,7 @@ int main()
 	num2.push_back(9);
 	num2.push_back(20);
 	num2.push_back(3);
-	TreeNode* result = solution.buildTree(num1,num2);
+	//TreeNode* result = solution.buildTree(num1,num2);
 	//TreeNode* result = solution.sortedArrayToBST(num);
 	
 	//int result = solution.findKthLargest(num,2);
@@ -275,6 +276,7 @@ int main()
 	temp3.right = NULL;
 	temp2.left = &temp4;
 	temp2.right = &temp5;
+	TreeNode* result = solution.lowestCommonAncestor(&temp1,&temp2,&temp4);
 	//solution.flatten(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	////vector<int> result = solution.postorderTraversal(&temp1);
