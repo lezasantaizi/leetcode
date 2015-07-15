@@ -79,7 +79,8 @@
 //#include "buildTree.h"
 //#include "sumNumbers.h"
 //#include "buildTree2.h"
-#include "lowestCommonAncestor.h"
+//#include "lowestCommonAncestor.h"
+#include "lowestCommonAncestor2.h"
 using namespace std;
 
 
@@ -156,7 +157,7 @@ using namespace std;
 
 int main()
 {
-	Solution83 solution;
+	Solution84 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -257,10 +258,10 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	TreeNode temp1(3);
-	TreeNode temp2(9);
-	TreeNode temp3(1);
-	TreeNode temp4(5);
+	TreeNode temp1(9);
+	TreeNode temp2(3);
+	TreeNode temp3(10);
+	TreeNode temp4(1);
 	TreeNode temp5(7);
 	TreeNode temp6(8);
 	TreeNode temp7(13);
