@@ -273,6 +273,9 @@
     <ClCompile Include="lowestCommonAncestor2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="connect2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -528,6 +531,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="lowestCommonAncestor2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="connect2.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
