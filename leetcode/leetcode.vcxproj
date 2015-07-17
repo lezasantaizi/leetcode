@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -94,6 +94,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="generate.cpp" />
+    <ClCompile Include="generateTrees.cpp" />
     <ClCompile Include="getIntersectionNode.cpp" />
     <ClCompile Include="getRow.cpp" />
     <ClCompile Include="hammingWeight.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="flatten.h" />
     <ClInclude Include="fourSum.h" />
     <ClInclude Include="generate.h" />
+    <ClInclude Include="generateTrees.h" />
     <ClInclude Include="getIntersectionNode.h" />
     <ClInclude Include="getRow.h" />
     <ClInclude Include="hammingWeight.h" />
