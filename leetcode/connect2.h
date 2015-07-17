@@ -14,3 +14,7 @@ class Solution85 {
 public:
 	void connect(TreeLinkNode *root) ;
 };
+
+
+
+

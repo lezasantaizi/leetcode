@@ -276,6 +276,9 @@
     <ClCompile Include="connect2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="maxPathSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -534,6 +537,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="connect2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="maxPathSum.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

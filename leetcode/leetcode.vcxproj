@@ -121,6 +121,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="maxDepth.cpp" />
+    <ClCompile Include="maxPathSum.cpp" />
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="minDepth.cpp" />
     <ClCompile Include="myAtoi.cpp" />
@@ -211,6 +212,7 @@
     <ClInclude Include="lowestCommonAncestor2.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="maxDepth.h" />
+    <ClInclude Include="maxPathSum.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="minDepth.h" />
     <ClInclude Include="myAtoi.h" />

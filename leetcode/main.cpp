@@ -81,7 +81,8 @@
 //#include "buildTree2.h"
 //#include "lowestCommonAncestor.h"
 //#include "lowestCommonAncestor2.h"
-#include "connect2.h"
+//#include "connect2.h"
+#include "maxPathSum.h"
 using namespace std;
 
 
@@ -158,7 +159,7 @@ using namespace std;
 
 int main()
 {
-	Solution85 solution;
+	Solution86 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -259,43 +260,45 @@ int main()
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
 
-	//TreeNode temp1(9);
-	//TreeNode temp2(3);
-	//TreeNode temp3(10);
-	//TreeNode temp4(1);
-	//TreeNode temp5(7);
-	//TreeNode temp6(8);
-	//TreeNode temp7(13);
-	//TreeNode temp8(4);
-	//TreeNode temp9(5);
-	//TreeNode temp10(1);
+	TreeNode temp1(2);
+	TreeNode temp2(-1);
+	TreeNode temp3(1);
+	TreeNode temp4(5);
+	TreeNode temp5(7);
+	TreeNode temp6(8);
+	TreeNode temp7(13);
+	TreeNode temp8(4);
+	TreeNode temp9(5);
+	TreeNode temp10(1);
 
 
-	//temp1.left = &temp2;
-	//temp1.right = &temp3;
-	//
-	//temp3.left = NULL;
-	//temp3.right = NULL;
+	temp1.left = &temp2;
+	temp1.right = NULL;
+	
+	temp3.left = NULL;
+	temp3.right = NULL;
 	//temp2.left = &temp4;
 	//temp2.right = &temp5;
+
 	//TreeNode* result = solution.lowestCommonAncestor(&temp1,&temp2,&temp4);
 	//solution.flatten(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
-	////vector<int> result = solution.postorderTraversal(&temp1);
-	//temp4.left = NULL;
-	//temp4.right = NULL;
-	//temp5.left = NULL;
-	//temp5.right = NULL;
-	//temp6.left = &temp7;
-	//temp6.right = &temp8;
-	//temp7.left = NULL;
-	//temp7.right = NULL;
-	//temp8.left = &temp9;
-	//temp8.right = &temp10;
-	//temp9.left = NULL;
-	//temp9.right = NULL;
-	//temp10.left = NULL;
-	//temp10.right = NULL;
+	//vector<int> result = solution.postorderTraversal(&temp1);
+	temp4.left = NULL;
+	temp4.right = NULL;
+	temp5.left = NULL;
+	temp5.right = NULL;
+	temp6.left = &temp7;
+	temp6.right = &temp8;
+	temp7.left = NULL;
+	temp7.right = NULL;
+	temp8.left = &temp9;
+	temp8.right = &temp10;
+	temp9.left = NULL;
+	temp9.right = NULL;
+	temp10.left = NULL;
+	temp10.right = NULL;
+	int result = solution.maxPathSum(&temp1);
 	//int result = solution.sumNumbers(&temp1);
 	//BSTIterator79 i = BSTIterator79(&temp1);
 	//while (i.hasNext()) cout << i.next()<<endl;
@@ -329,24 +332,24 @@ int main()
 	//bool result = solution.isSameTree(&temp1,&temp4);
 	//int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
 
-	TreeLinkNode node1(1);
-	TreeLinkNode node2(2);
-	TreeLinkNode node3(3);
-	TreeLinkNode node4(4);
-	TreeLinkNode node5(5);
+	//TreeLinkNode node1(1);
+	//TreeLinkNode node2(2);
+	//TreeLinkNode node3(3);
+	//TreeLinkNode node4(4);
+	//TreeLinkNode node5(5);
 
-	node1.left = &node2;
-	node1.right = &node3;
-	node2.left = &node4;
-	node2.right = &node5;
-	node3.left = NULL;
-	node3.right = NULL;
-	node4.left = NULL;
-	node4.right = NULL;
-	node5.left = NULL;
-	node5.right = NULL;
+	//node1.left = &node2;
+	//node1.right = &node3;
+	//node2.left = &node4;
+	//node2.right = &node5;
+	//node3.left = NULL;
+	//node3.right = NULL;
+	//node4.left = NULL;
+	//node4.right = NULL;
+	//node5.left = NULL;
+	//node5.right = NULL;
 
-	solution.connect(&node1);
+	//solution.connect(&node1);
 
 	return 0;
 }
