@@ -82,7 +82,8 @@
 //#include "lowestCommonAncestor.h"
 //#include "lowestCommonAncestor2.h"
 //#include "connect2.h"
-#include "maxPathSum.h"
+//#include "maxPathSum.h"
+#include "generateTrees.h"
 using namespace std;
 
 
@@ -159,7 +160,7 @@ using namespace std;
 
 int main()
 {
-	Solution86 solution;
+	Solution87 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -298,7 +299,8 @@ int main()
 	temp9.right = NULL;
 	temp10.left = NULL;
 	temp10.right = NULL;
-	int result = solution.maxPathSum(&temp1);
+	//int result = solution.maxPathSum(&temp1);
+	vector<TreeNode*> result = solution.generateTrees(3);
 	//int result = solution.sumNumbers(&temp1);
 	//BSTIterator79 i = BSTIterator79(&temp1);
 	//while (i.hasNext()) cout << i.next()<<endl;
