@@ -148,6 +148,7 @@
     <ClCompile Include="rob.cpp" />
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
+    <ClCompile Include="search.cpp" />
     <ClCompile Include="searchInsert.cpp" />
     <ClCompile Include="sortedArrayToBST.cpp" />
     <ClCompile Include="sortedListToBST.cpp" />
@@ -240,6 +241,7 @@
     <ClInclude Include="rob.h" />
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
+    <ClInclude Include="search.h" />
     <ClInclude Include="searchInsert.h" />
     <ClInclude Include="sortedArrayToBST.h" />
     <ClInclude Include="sortedListToBST.h" />

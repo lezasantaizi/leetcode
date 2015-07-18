@@ -83,7 +83,8 @@
 //#include "lowestCommonAncestor2.h"
 //#include "connect2.h"
 //#include "maxPathSum.h"
-#include "generateTrees.h"
+//#include "generateTrees.h"
+#include "search.h"
 using namespace std;
 
 
@@ -160,7 +161,7 @@ using namespace std;
 
 int main()
 {
-	Solution87 solution;
+	Solution88 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -174,11 +175,12 @@ int main()
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num1;
-	num1.push_back(15);
-	num1.push_back(9);
-	num1.push_back(7);
+	num1.push_back(2);
 	num1.push_back(3);
-	num1.push_back(20);
+	num1.push_back(4);
+	num1.push_back(0);
+	num1.push_back(1);
+	int result = solution.search(num1,2);
 
 	vector<int> num2;
 	num2.push_back(15);
@@ -300,7 +302,7 @@ int main()
 	temp10.left = NULL;
 	temp10.right = NULL;
 	//int result = solution.maxPathSum(&temp1);
-	vector<TreeNode*> result = solution.generateTrees(3);
+	//vector<TreeNode*> result = solution.generateTrees(3);
 	//int result = solution.sumNumbers(&temp1);
 	//BSTIterator79 i = BSTIterator79(&temp1);
 	//while (i.hasNext()) cout << i.next()<<endl;
