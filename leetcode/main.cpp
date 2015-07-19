@@ -60,7 +60,7 @@
 //#include "findKthLargest.h"
 //#include "reverseBetween.h"
 //#include "kthSmallest.h"
-//#include "recoverTree.h"
+#include "recoverTree.h"
 //#include "sortedListToBST.h"
 //#include "sortedArrayToBST.h"
 //#include "inorderTraversal.h"
@@ -84,7 +84,7 @@
 //#include "connect2.h"
 //#include "maxPathSum.h"
 //#include "generateTrees.h"
-#include "search.h"
+//#include "search.h"
 using namespace std;
 
 
@@ -161,7 +161,7 @@ using namespace std;
 
 int main()
 {
-	Solution88 solution;
+	Solution65 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -180,7 +180,7 @@ int main()
 	num1.push_back(4);
 	num1.push_back(0);
 	num1.push_back(1);
-	int result = solution.search(num1,2);
+	//int result = solution.search(num1,2);
 
 	vector<int> num2;
 	num2.push_back(15);
@@ -264,10 +264,10 @@ int main()
 	//solution.merge(temp1,3,temp2,2);
 
 	TreeNode temp1(2);
-	TreeNode temp2(-1);
-	TreeNode temp3(1);
-	TreeNode temp4(5);
-	TreeNode temp5(7);
+	TreeNode temp2(1);
+	TreeNode temp3(4);
+	TreeNode temp4(0);
+	TreeNode temp5(3);
 	TreeNode temp6(8);
 	TreeNode temp7(13);
 	TreeNode temp8(4);
@@ -276,12 +276,13 @@ int main()
 
 
 	temp1.left = &temp2;
-	temp1.right = NULL;
+	temp1.right = &temp3;
 	
 	temp3.left = NULL;
 	temp3.right = NULL;
-	//temp2.left = &temp4;
-	//temp2.right = &temp5;
+	
+	temp2.left = &temp4;
+	temp2.right = &temp5;
 
 	//TreeNode* result = solution.lowestCommonAncestor(&temp1,&temp2,&temp4);
 	//solution.flatten(&temp1);
@@ -291,6 +292,7 @@ int main()
 	temp4.right = NULL;
 	temp5.left = NULL;
 	temp5.right = NULL;
+	solution.recoverTree(&temp1);
 	temp6.left = &temp7;
 	temp6.right = &temp8;
 	temp7.left = NULL;

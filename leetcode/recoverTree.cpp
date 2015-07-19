@@ -1,38 +1,29 @@
 #include "recoverTree.h"
 
+TreeNode* wrong1,*wrong2,*temp;
+void func(TreeNode* root)
+{
+	if(root == NULL)
+		return;
+	func(root->left);
+	if (root->val < temp->val)
+	{
+		if(wrong1 == NULL)
+			wrong1 = temp;
+		wrong2 = root;
+	}
+	temp = root;
+	func(root->right);
+}
+
 void Solution65::recoverTree(TreeNode* root) 
 {
-	stack<TreeNode*> temp;
-	TreeNode* firstMistake = NULL;
-	TreeNode* secondMistake = NULL;
-
-	while(root!= NULL || temp.empty() != true)
-	{
-		if (root != NULL)
-		{
-			temp.push(root);
-			root = root->left;
-		}
-		else
-		{
-			root = temp.top();
-			temp.pop();
-			if((root->left != NULL && root->val < root->left->val) || (root->right != NULL && root->val > root->right->val))
-			{
-				if(firstMistake == NULL)
-					firstMistake = root;
-				else 
-				{
-					secondMistake = root;
-					break;
-				}
-			}
-			printf("%d,",root->val);
-			root = root->right;
-		}
-	}
-
-	int value = firstMistake->val;
-	firstMistake->val = secondMistake->val;
-	secondMistake->val = value;
+	 temp = new TreeNode(-10000);
+	 wrong1 = NULL;
+	 wrong2 = NULL;
+	 func(root);
+	 int temp_value = wrong1->val;
+	 wrong1->val = wrong2->val;
+	 wrong2->val = temp_value;
+	 return ;
 }
