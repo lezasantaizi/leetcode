@@ -152,6 +152,7 @@
     <ClCompile Include="searchInsert.cpp" />
     <ClCompile Include="sortedArrayToBST.cpp" />
     <ClCompile Include="sortedListToBST.cpp" />
+    <ClCompile Include="sortList.cpp" />
     <ClCompile Include="spiralOrder.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -245,6 +246,7 @@
     <ClInclude Include="searchInsert.h" />
     <ClInclude Include="sortedArrayToBST.h" />
     <ClInclude Include="sortedListToBST.h" />
+    <ClInclude Include="sortList.h" />
     <ClInclude Include="spiralOrder.h" />
     <ClInclude Include="sumNumbers.h" />
     <ClInclude Include="threeSum.h" />

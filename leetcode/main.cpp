@@ -60,7 +60,7 @@
 //#include "findKthLargest.h"
 //#include "reverseBetween.h"
 //#include "kthSmallest.h"
-#include "recoverTree.h"
+//#include "recoverTree.h"
 //#include "sortedListToBST.h"
 //#include "sortedArrayToBST.h"
 //#include "inorderTraversal.h"
@@ -85,6 +85,7 @@
 //#include "maxPathSum.h"
 //#include "generateTrees.h"
 //#include "search.h"
+#include "sortList.h"
 using namespace std;
 
 
@@ -161,7 +162,7 @@ using namespace std;
 
 int main()
 {
-	Solution65 solution;
+	Solution89 solution;
 
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -239,70 +240,66 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	//ListNode node1(1);
-	//ListNode node2(2);
-	//ListNode node3(3);
-	//ListNode node4(4);
-	//ListNode node5(5);
+	ListNode node1(1);
+	ListNode node2(3);
+	ListNode node3(2);
+	ListNode node4(4);
+	ListNode node5(5);
 	//ListNode node6(6);
 
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node5;
-	//node5.next = &node6;
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = NULL;
 	//node6.next = NULL;
+	ListNode* result = solution.sortList(&node1);
 	//TreeNode* result = solution.sortedListToBST(&node1);
 	//ListNode* result = solution.reverseBetween(&node1,1,4);
 	//int result = solution.longestConsecutive(temp);
 	//vector<int> result = solution.spiralOrder(matrix);
 	//ListNode* result = solution.partition(&node1,3);
 	//int result = romanToInt("DCXXI");
-
 	//vector<int> temp1(10, 1);
 	//vector<int> temp2(3, 2);
 	//solution.merge(temp1,3,temp2,2);
-
-	TreeNode temp1(2);
-	TreeNode temp2(1);
-	TreeNode temp3(4);
-	TreeNode temp4(0);
-	TreeNode temp5(3);
-	TreeNode temp6(8);
-	TreeNode temp7(13);
-	TreeNode temp8(4);
-	TreeNode temp9(5);
-	TreeNode temp10(1);
-
-
-	temp1.left = &temp2;
-	temp1.right = &temp3;
-	
-	temp3.left = NULL;
-	temp3.right = NULL;
-	
-	temp2.left = &temp4;
-	temp2.right = &temp5;
-
+	//TreeNode temp1(2);
+	//TreeNode temp2(1);
+	//TreeNode temp3(4);
+	//TreeNode temp4(0);
+	//TreeNode temp5(3);
+	//TreeNode temp6(8);
+	//TreeNode temp7(13);
+	//TreeNode temp8(4);
+	//TreeNode temp9(5);
+	//TreeNode temp10(1);
+	//temp1.left = &temp2;
+	//temp1.right = &temp3;
+	//
+	//temp3.left = NULL;
+	//temp3.right = NULL;
+	//
+	//temp2.left = &temp4;
+	//temp2.right = &temp5;
 	//TreeNode* result = solution.lowestCommonAncestor(&temp1,&temp2,&temp4);
 	//solution.flatten(&temp1);
 	//vector<vector<int>> result = solution.pathSum(&temp1,22);
 	//vector<int> result = solution.postorderTraversal(&temp1);
-	temp4.left = NULL;
-	temp4.right = NULL;
-	temp5.left = NULL;
-	temp5.right = NULL;
-	solution.recoverTree(&temp1);
-	temp6.left = &temp7;
-	temp6.right = &temp8;
-	temp7.left = NULL;
-	temp7.right = NULL;
-	temp8.left = &temp9;
-	temp8.right = &temp10;
-	temp9.left = NULL;
-	temp9.right = NULL;
-	temp10.left = NULL;
-	temp10.right = NULL;
+	//temp4.left = NULL;
+	//temp4.right = NULL;
+	//temp5.left = NULL;
+	//temp5.right = NULL;
+	////solution.recoverTree(&temp1);
+	//temp6.left = &temp7;
+	//temp6.right = &temp8;
+	//temp7.left = NULL;
+	//temp7.right = NULL;
+	//temp8.left = &temp9;
+	//temp8.right = &temp10;
+	//temp9.left = NULL;
+	//temp9.right = NULL;
+	//temp10.left = NULL;
+	//temp10.right = NULL;
 	//int result = solution.maxPathSum(&temp1);
 	//vector<TreeNode*> result = solution.generateTrees(3);
 	//int result = solution.sumNumbers(&temp1);
@@ -318,32 +315,24 @@ int main()
 	//vector<int> result = solution.inorderTraversal(&temp1);
 	//temp6.left = NULL;
 	//temp6.right = NULL;
-
 	//int result = solution.kthSmallest(&temp1,4);
 	//solution.recoverTree(&temp1);
-	
-
 	//struct ListNode node1(1);
 	//struct ListNode node2(7);
 	//struct ListNode node3(3);
-
 	//ListNode* result = solution.addTwoNumbers(&node1,&node2);
-
 	//int result = solution.minDepth(&temp1);
 	//int result = solution.maxDepth(&temp1);
 	//bool result = solution.hasPathSum(&temp1,1);
 	//vector<vector<int>> result = solution.levelOrder(&temp1);
 	//TreeNode* result = solution.invertTree(&temp1);
-
 	//bool result = solution.isSameTree(&temp1,&temp4);
 	//int result = solution.computeArea(-1,-1,0,0,2,2,3,3);
-
 	//TreeLinkNode node1(1);
 	//TreeLinkNode node2(2);
 	//TreeLinkNode node3(3);
 	//TreeLinkNode node4(4);
 	//TreeLinkNode node5(5);
-
 	//node1.left = &node2;
 	//node1.right = &node3;
 	//node2.left = &node4;
@@ -354,7 +343,6 @@ int main()
 	//node4.right = NULL;
 	//node5.left = NULL;
 	//node5.right = NULL;
-
 	//solution.connect(&node1);
 
 	return 0;
