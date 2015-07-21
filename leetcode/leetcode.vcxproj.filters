@@ -288,6 +288,9 @@
     <ClCompile Include="sortList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MinStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -558,6 +561,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="sortList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MinStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

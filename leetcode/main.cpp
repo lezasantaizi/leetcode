@@ -85,7 +85,8 @@
 //#include "maxPathSum.h"
 //#include "generateTrees.h"
 //#include "search.h"
-#include "sortList.h"
+//#include "sortList.h"
+#include "MinStack.h"
 using namespace std;
 
 
@@ -162,8 +163,18 @@ using namespace std;
 
 int main()
 {
-	Solution89 solution;
-
+	Solution90 solution;
+	solution.push(1);
+	solution.push(1);
+	solution.push(2);
+	int result1 = solution.getMin();
+	solution.pop();
+	solution.pop();
+	int result2 = solution.getMin();
+	solution.pop();
+	solution.pop();
+	solution.top();
+	
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
 	//int nums2[5]= {15,9,7,3,20};
@@ -253,7 +264,7 @@ int main()
 	node4.next = &node5;
 	node5.next = NULL;
 	//node6.next = NULL;
-	ListNode* result = solution.sortList(&node1);
+	//ListNode* result = solution.sortList(&node1);
 	//TreeNode* result = solution.sortedListToBST(&node1);
 	//ListNode* result = solution.reverseBetween(&node1,1,4);
 	//int result = solution.longestConsecutive(temp);

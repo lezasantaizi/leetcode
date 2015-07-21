@@ -125,6 +125,7 @@
     <ClCompile Include="maxPathSum.cpp" />
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="minDepth.cpp" />
+    <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="myAtoi.cpp" />
     <ClCompile Include="numTrees.cpp" />
     <ClCompile Include="partition.cpp" />
@@ -219,6 +220,7 @@
     <ClInclude Include="maxPathSum.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="minDepth.h" />
+    <ClInclude Include="MinStack.h" />
     <ClInclude Include="myAtoi.h" />
     <ClInclude Include="numTrees.h" />
     <ClInclude Include="partition.h" />
