@@ -86,7 +86,8 @@
 //#include "generateTrees.h"
 //#include "search.h"
 //#include "sortList.h"
-#include "MinStack.h"
+//#include "MinStack.h"
+#include "maxSlidingWindow.h"
 using namespace std;
 
 
@@ -163,17 +164,17 @@ using namespace std;
 
 int main()
 {
-	Solution90 solution;
-	solution.push(1);
-	solution.push(1);
-	solution.push(2);
-	int result1 = solution.getMin();
-	solution.pop();
-	solution.pop();
-	int result2 = solution.getMin();
-	solution.pop();
-	solution.pop();
-	solution.top();
+	Solution91 solution;
+	//solution.push(1);
+	//solution.push(1);
+	//solution.push(2);
+	//int result1 = solution.getMin();
+	//solution.pop();
+	//solution.pop();
+	//int result2 = solution.getMin();
+	//solution.pop();
+	//solution.pop();
+	//solution.top();
 	
 	//int result = solution.numTrees(5);
 	//int nums1[5]= {3,9,15,7,20};
@@ -187,11 +188,15 @@ int main()
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 	vector<int> num1;
-	num1.push_back(2);
-	num1.push_back(3);
-	num1.push_back(4);
-	num1.push_back(0);
 	num1.push_back(1);
+	num1.push_back(3);
+	num1.push_back(-1);
+	num1.push_back(-3);
+	num1.push_back(5);
+	num1.push_back(3);
+	num1.push_back(6);
+	num1.push_back(7);
+	vector<int> result = solution.maxSlidingWindow(num1,3);
 	//int result = solution.search(num1,2);
 
 	vector<int> num2;
@@ -251,18 +256,18 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	ListNode node1(1);
-	ListNode node2(3);
-	ListNode node3(2);
-	ListNode node4(4);
-	ListNode node5(5);
-	//ListNode node6(6);
+	//ListNode node1(1);
+	//ListNode node2(3);
+	//ListNode node3(2);
+	//ListNode node4(4);
+	//ListNode node5(5);
+	////ListNode node6(6);
 
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = &node4;
-	node4.next = &node5;
-	node5.next = NULL;
+	//node1.next = &node2;
+	//node2.next = &node3;
+	//node3.next = &node4;
+	//node4.next = &node5;
+	//node5.next = NULL;
 	//node6.next = NULL;
 	//ListNode* result = solution.sortList(&node1);
 	//TreeNode* result = solution.sortedListToBST(&node1);
