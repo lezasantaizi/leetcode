@@ -294,6 +294,9 @@
     <ClCompile Include="maxSlidingWindow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="swapPairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -570,6 +573,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="maxSlidingWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="swapPairs.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

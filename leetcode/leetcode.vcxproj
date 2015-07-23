@@ -159,6 +159,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="sumNumbers.cpp" />
+    <ClCompile Include="swapPairs.cpp" />
     <ClCompile Include="threeSum.cpp" />
     <ClCompile Include="threeSumClosest.cpp" />
     <ClCompile Include="titleToNumber.cpp" />
@@ -253,6 +254,7 @@
     <ClInclude Include="sortList.h" />
     <ClInclude Include="spiralOrder.h" />
     <ClInclude Include="sumNumbers.h" />
+    <ClInclude Include="swapPairs.h" />
     <ClInclude Include="threeSum.h" />
     <ClInclude Include="threeSumClosest.h" />
     <ClInclude Include="titleToNumber.h" />

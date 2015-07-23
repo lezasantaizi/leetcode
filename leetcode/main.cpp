@@ -87,7 +87,8 @@
 //#include "search.h"
 //#include "sortList.h"
 //#include "MinStack.h"
-#include "maxSlidingWindow.h"
+//#include "maxSlidingWindow.h"
+#include "swapPairs.h"
 using namespace std;
 
 
@@ -164,7 +165,7 @@ using namespace std;
 
 int main()
 {
-	Solution91 solution;
+	Solution92 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -196,7 +197,7 @@ int main()
 	num1.push_back(3);
 	num1.push_back(6);
 	num1.push_back(7);
-	vector<int> result = solution.maxSlidingWindow(num1,3);
+	//vector<int> result = solution.maxSlidingWindow(num1,3);
 	//int result = solution.search(num1,2);
 
 	vector<int> num2;
@@ -256,19 +257,20 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	//ListNode node1(1);
-	//ListNode node2(3);
-	//ListNode node3(2);
-	//ListNode node4(4);
-	//ListNode node5(5);
-	////ListNode node6(6);
+	ListNode node1(1);
+	ListNode node2(2);
+	ListNode node3(3);
+	ListNode node4(4);
+	ListNode node5(5);
+	//ListNode node6(6);
 
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node5;
-	//node5.next = NULL;
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = NULL;
 	//node6.next = NULL;
+	ListNode* result = solution.swapPairs(&node1);
 	//ListNode* result = solution.sortList(&node1);
 	//TreeNode* result = solution.sortedListToBST(&node1);
 	//ListNode* result = solution.reverseBetween(&node1,1,4);
