@@ -88,7 +88,8 @@
 //#include "sortList.h"
 //#include "MinStack.h"
 //#include "maxSlidingWindow.h"
-#include "swapPairs.h"
+//#include "swapPairs.h"
+#include "rotateRight.h"
 using namespace std;
 
 
@@ -165,7 +166,7 @@ using namespace std;
 
 int main()
 {
-	Solution92 solution;
+	Solution93 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -270,7 +271,8 @@ int main()
 	node4.next = &node5;
 	node5.next = NULL;
 	//node6.next = NULL;
-	ListNode* result = solution.swapPairs(&node1);
+	ListNode* result = solution.rotateRight(&node1,1);
+	//ListNode* result = solution.swapPairs(&node1);
 	//ListNode* result = solution.sortList(&node1);
 	//TreeNode* result = solution.sortedListToBST(&node1);
 	//ListNode* result = solution.reverseBetween(&node1,1,4);
