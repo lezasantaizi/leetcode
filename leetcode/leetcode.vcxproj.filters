@@ -303,6 +303,9 @@
     <ClCompile Include="reverseKGroup.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="deleteNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -588,6 +591,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="reverseKGroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="deleteNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

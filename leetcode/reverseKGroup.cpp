@@ -10,11 +10,6 @@ ListNode* Solution94::reverseKGroup(ListNode* head, int k)
 	ListNode* cur = head;
 
 	ListNode* fast = head;
-	//ListNode* new_head = head;
-	//ListNode* begin = NULL;
-	//ListNode* start = head;
-	//ListNode* second = NULL;
-	//ListNode* end = NULL;
 	int cnt_for_k = 0;
 	while (fast)
 	{

@@ -90,7 +90,8 @@
 //#include "maxSlidingWindow.h"
 //#include "swapPairs.h"
 //#include "rotateRight.h"
-#include "reverseKGroup.h"
+//#include "reverseKGroup.h"
+#include "deleteNode.h"
 using namespace std;
 
 
@@ -167,7 +168,7 @@ using namespace std;
 
 int main()
 {
-	Solution94 solution;
+	Solution95 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -271,7 +272,8 @@ int main()
 	node3.next = &node4;
 	node4.next = &node5;
 	node5.next = NULL;
-	ListNode* result = solution.reverseKGroup(&node1,2);
+	solution.deleteNode(&node1);
+	//ListNode* result = solution.reverseKGroup(&node1,2);
 	//node6.next = NULL;
 	//ListNode* result = solution.rotateRight(&node1,1);
 	//ListNode* result = solution.swapPairs(&node1);
