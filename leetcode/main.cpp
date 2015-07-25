@@ -89,7 +89,8 @@
 //#include "MinStack.h"
 //#include "maxSlidingWindow.h"
 //#include "swapPairs.h"
-#include "rotateRight.h"
+//#include "rotateRight.h"
+#include "reverseKGroup.h"
 using namespace std;
 
 
@@ -166,7 +167,7 @@ using namespace std;
 
 int main()
 {
-	Solution93 solution;
+	Solution94 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -270,8 +271,9 @@ int main()
 	node3.next = &node4;
 	node4.next = &node5;
 	node5.next = NULL;
+	ListNode* result = solution.reverseKGroup(&node1,2);
 	//node6.next = NULL;
-	ListNode* result = solution.rotateRight(&node1,1);
+	//ListNode* result = solution.rotateRight(&node1,1);
 	//ListNode* result = solution.swapPairs(&node1);
 	//ListNode* result = solution.sortList(&node1);
 	//TreeNode* result = solution.sortedListToBST(&node1);

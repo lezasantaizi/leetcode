@@ -144,6 +144,7 @@
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="reverseBetween.cpp" />
     <ClCompile Include="reverseBits.cpp" />
+    <ClCompile Include="reverseKGroup.cpp" />
     <ClCompile Include="reverseList.cpp" />
     <ClCompile Include="longestConsecutive.cpp" />
     <ClCompile Include="rightSideView.cpp" />
@@ -242,6 +243,7 @@
     <ClInclude Include="reverse.h" />
     <ClInclude Include="reverseBetween.h" />
     <ClInclude Include="reverseBits.h" />
+    <ClInclude Include="reverseKGroup.h" />
     <ClInclude Include="reverseList.h" />
     <ClInclude Include="longestConsecutive.h" />
     <ClInclude Include="rightSideView.h" />
