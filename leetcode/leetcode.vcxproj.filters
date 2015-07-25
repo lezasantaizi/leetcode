@@ -306,6 +306,9 @@
     <ClCompile Include="deleteNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="copyRandomList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -594,6 +597,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="deleteNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="copyRandomList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
