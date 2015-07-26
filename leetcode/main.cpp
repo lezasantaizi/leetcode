@@ -93,84 +93,13 @@
 //#include "reverseKGroup.h"
 //#include "deleteNode.h"
 //#include "copyRandomList.h"
-#include "insertionSortList.h"
+//#include "insertionSortList.h"
+#include "mergeKLists.h"
 using namespace std;
-
-
-//struct TreeNode {
-//	int val;
-//	struct TreeNode *left;
-//	struct TreeNode *right;
-//};
-//
-//void func(struct TreeNode* result ,int* preorder, int preorderSize, int* inorder, int inorderSize)
-//{
-//	if(preorderSize == 0)
-//		return ;
-//	result->val = preorder[0];
-//	int* leftorder_pre = NULL;
-//	int* leftorder_in = NULL;
-//	int leftorder_size = 0;
-//	int* rightorder_pre = NULL;
-//	int* rightorder_in = NULL;
-//	int rightoder_size = 0;
-//	int i = 0;
-//	for ( i = 0; i< preorderSize;i++)
-//	{
-//		if(inorder[i] == preorder[0])
-//			break;
-//	}
-//	leftorder_size = i;
-//	if(leftorder_size == 0)
-//	{
-//		leftorder_in = NULL;
-//		leftorder_pre = NULL;
-//	}
-//	else
-//	{
-//		leftorder_in = inorder;
-//		leftorder_pre = &preorder[1];
-//	}
-//	rightoder_size = preorderSize - 1 - i;
-//	if(rightoder_size == 0)
-//	{
-//		rightorder_in = NULL;
-//		rightorder_pre = NULL;
-//	}
-//	else
-//	{
-//		rightorder_in = &inorder[i+1];
-//		rightorder_pre = &preorder[i+1];
-//	}
-//
-//	struct TreeNode* node_left = (struct TreeNode*)malloc(sizeof(TreeNode*));
-//	node_left->left = NULL;
-//	node_left->right = NULL;
-//	struct TreeNode* node_right = (struct TreeNode*)malloc(sizeof(TreeNode*));
-//	node_right->left = NULL;
-//	node_right->right = NULL;
-//	if(leftorder_size != 0)
-//	{
-//		result->left = node_left;
-//		func(node_left,leftorder_pre,leftorder_size,leftorder_in,leftorder_size);
-//	}
-//	if (rightoder_size != 0)
-//	{
-//		result->right = node_right;
-//		func(node_right,rightorder_pre,rightoder_size,rightorder_in,rightoder_size);
-//	}
-//}
-//
-//struct TreeNode* buildTree(int* preorder, int preorderSize, int* inorder, int inorderSize) 
-//{
-//	struct TreeNode* result = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-//	func(result,preorder,preorderSize,inorder,inorderSize);
-//	return result;
-//}
 
 int main()
 {
-	Solution97 solution;
+	Solution98 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -279,19 +208,23 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	ListNode node1(3);
-	ListNode node2(2);
-	ListNode node3(1);
+	ListNode node1(1);
+	ListNode node2(3);
+	ListNode node3(2);
 	ListNode node4(4);
 	ListNode node5(5);
 	//ListNode node6(6);
 
 	node1.next = &node2;
-	node2.next = &node3;
+	node2.next = NULL;
 	node3.next = &node4;
 	node4.next = &node5;
 	node5.next = NULL;
-	ListNode* result = solution.insertionSortList(&node1);
+	vector<ListNode*> input;
+	input.push_back(&node1);
+	input.push_back(&node3);
+	ListNode* result = solution.mergeKLists(input);
+	//ListNode* result = solution.insertionSortList(&node1);
 	//solution.deleteNode(&node1);
 	//ListNode* result = solution.reverseKGroup(&node1,2);
 	//node6.next = NULL;

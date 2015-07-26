@@ -128,6 +128,7 @@
     <ClCompile Include="maxPathSum.cpp" />
     <ClCompile Include="maxSlidingWindow.cpp" />
     <ClCompile Include="merge.cpp" />
+    <ClCompile Include="mergeKLists.cpp" />
     <ClCompile Include="minDepth.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="myAtoi.cpp" />
@@ -230,6 +231,7 @@
     <ClInclude Include="maxPathSum.h" />
     <ClInclude Include="maxSlidingWindow.h" />
     <ClInclude Include="merge.h" />
+    <ClInclude Include="mergeKLists.h" />
     <ClInclude Include="minDepth.h" />
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="myAtoi.h" />
