@@ -44,5 +44,5 @@ RandomListNode *Solution96::copyRandomList(RandomListNode *head)
 		copy_head = copy_head->next;
 		new_head = new_head->next;
 	}
-	return copy_head->next;
+	return copy_head_temp->next;
 }

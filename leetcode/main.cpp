@@ -92,7 +92,8 @@
 //#include "rotateRight.h"
 //#include "reverseKGroup.h"
 //#include "deleteNode.h"
-#include "copyRandomList.h"
+//#include "copyRandomList.h"
+#include "insertionSortList.h"
 using namespace std;
 
 
@@ -169,7 +170,7 @@ using namespace std;
 
 int main()
 {
-	Solution96 solution;
+	Solution97 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -236,24 +237,24 @@ int main()
 	//num.push_back(-1);
 	//num.push_back(4);
 
-	RandomListNode node1(1);
-	RandomListNode node2(2);
-	RandomListNode node3(3);
-	RandomListNode node4(4);
-	RandomListNode node5(5);
-	//ListNode node6(6);
+	//RandomListNode node1(1);
+	//RandomListNode node2(2);
+	//RandomListNode node3(3);
+	//RandomListNode node4(4);
+	//RandomListNode node5(5);
+	////ListNode node6(6);
 
-	node1.next = &node2;
-	node1.random = &node3;
-	node2.next = &node3;
-	node2.random = &node4;
-	node3.next = &node4;
-	node3.random = &node5;
-	node4.next = &node5;
-	node4.random = &node2;
-	node5.next = NULL;
-	node5.random = &node1;
-	RandomListNode* result = solution.copyRandomList(&node1);
+	//node1.next = &node2;
+	//node1.random = &node3;
+	//node2.next = &node3;
+	//node2.random = &node4;
+	//node3.next = &node4;
+	//node3.random = &node5;
+	//node4.next = &node5;
+	//node4.random = &node2;
+	//node5.next = NULL;
+	//node5.random = &node1;
+	//RandomListNode* result = solution.copyRandomList(&node1);
 
 	//[-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
 	//num.push_back(-4);
@@ -278,18 +279,19 @@ int main()
 		matrix.push_back(temp);
 	}
 
-	//ListNode node1(1);
-	//ListNode node2(2);
-	//ListNode node3(3);
-	//ListNode node4(4);
-	//ListNode node5(5);
-	////ListNode node6(6);
+	ListNode node1(3);
+	ListNode node2(2);
+	ListNode node3(1);
+	ListNode node4(4);
+	ListNode node5(5);
+	//ListNode node6(6);
 
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node5;
-	//node5.next = NULL;
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node5;
+	node5.next = NULL;
+	ListNode* result = solution.insertionSortList(&node1);
 	//solution.deleteNode(&node1);
 	//ListNode* result = solution.reverseKGroup(&node1,2);
 	//node6.next = NULL;

@@ -102,6 +102,7 @@
     <ClCompile Include="hammingWeight.cpp" />
     <ClCompile Include="hasPathSum.cpp" />
     <ClCompile Include="inorderTraversal.cpp" />
+    <ClCompile Include="insertionSortList.cpp" />
     <ClCompile Include="invertTree.cpp" />
     <ClCompile Include="isBalanced.cpp" />
     <ClCompile Include="isHappy.cpp" />
@@ -204,6 +205,7 @@
     <ClInclude Include="hammingWeight.h" />
     <ClInclude Include="hasPathSum.h" />
     <ClInclude Include="inorderTraversal.h" />
+    <ClInclude Include="insertionSortList.h" />
     <ClInclude Include="invertTree.h" />
     <ClInclude Include="isBalanced.h" />
     <ClInclude Include="isHappy.h" />
