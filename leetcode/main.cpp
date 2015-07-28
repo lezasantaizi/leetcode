@@ -97,12 +97,13 @@
 //#include "mergeKLists.h"
 //#include "hasCycle.h"
 //#include "detectCycle.h"
-#include "deleteDuplicates2.h"
+//#include "deleteDuplicates2.h"
+#include "isPalindrome_list.h"
 using namespace std;
 
 int main()
 {
-	Solution101 solution;
+	Solution102 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -212,18 +213,19 @@ int main()
 	}
 
 	ListNode node1(1);
-	ListNode node2(1);
-	ListNode node3(1);
-	ListNode node4(4);
-	ListNode node5(5);
+	ListNode node2(2);
+	ListNode node3(2);
+	ListNode node4(1);
+	ListNode node5(1);
 	//ListNode node6(6);
 
 	node1.next = &node2;
 	node2.next = &node3;
 	node3.next = &node4;
-	node4.next = &node5;
+	node4.next = NULL;
 	node5.next = NULL;
-	ListNode* result = solution.deleteDuplicates(&node1);
+	bool result = solution.isPalindrome(&node1);
+	//ListNode* result = solution.deleteDuplicates(&node1);
 	//vector<ListNode*> input;
 	//input.push_back(&node1);
 	//input.push_back(&node3);

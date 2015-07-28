@@ -113,6 +113,7 @@
     <ClCompile Include="isNumber.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
     <ClCompile Include="isPalindrome2.cpp" />
+    <ClCompile Include="isPalindrome_list.cpp" />
     <ClCompile Include="isSameTree.cpp" />
     <ClCompile Include="isSymmetric.cpp" />
     <ClCompile Include="isValid.cpp" />
@@ -220,6 +221,7 @@
     <ClInclude Include="isNumber.h" />
     <ClInclude Include="isPalindrome.h" />
     <ClInclude Include="isPalindrome2.h" />
+    <ClInclude Include="isPalindrome_list.h" />
     <ClInclude Include="isSameTree.h" />
     <ClInclude Include="isSymmetric.h" />
     <ClInclude Include="isValid.h" />
