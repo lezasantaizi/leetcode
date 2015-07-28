@@ -30,10 +30,21 @@ ListNode* Solution101::deleteDuplicates(ListNode* head)
 		}
 		if (flag == 1)
 		{
-			continue;;
+			continue;
 		}
 		new_head = new_head->next;
 		cur = cur->next;
 	}
 	return temp->next;
+
+	//ListNode* psuedo = new ListNode(0), *node = psuedo;
+	//psuedo->next = head;
+	//while (node->next)
+	//	if (node->next->next && node->next->val == node->next->next->val) {
+	//		while (node->next->next && node->next->val == node->next->next->val)
+	//			node->next->next = node->next->next->next;
+	//		node->next = node->next->next;
+	//	} else
+	//		node = node->next;
+	//	return psuedo->next;
 }
