@@ -90,6 +90,7 @@
     <ClCompile Include="countPrimes.cpp" />
     <ClCompile Include="deleteDuplicates.cpp" />
     <ClCompile Include="deleteNode.cpp" />
+    <ClCompile Include="detectCycle.cpp" />
     <ClCompile Include="findKthLargest.cpp" />
     <ClCompile Include="flatten.cpp" />
     <ClCompile Include="fourSum.cpp">
@@ -197,6 +198,7 @@
     <ClInclude Include="countPrimes.h" />
     <ClInclude Include="deleteDuplicates.h" />
     <ClInclude Include="deleteNode.h" />
+    <ClInclude Include="detectCycle.h" />
     <ClInclude Include="findKthLargest.h" />
     <ClInclude Include="flatten.h" />
     <ClInclude Include="fourSum.h" />

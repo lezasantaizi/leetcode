@@ -95,12 +95,13 @@
 //#include "copyRandomList.h"
 //#include "insertionSortList.h"
 //#include "mergeKLists.h"
-#include "hasCycle.h"
+//#include "hasCycle.h"
+#include "detectCycle.h"
 using namespace std;
 
 int main()
 {
-	Solution99 solution;
+	Solution100 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -217,14 +218,15 @@ int main()
 	//ListNode node6(6);
 
 	node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = &node4;
-	//node4.next = &node2;
-	//node5.next = NULL;
+	node2.next = &node3;
+	node3.next = &node4;
+	node4.next = &node2;
+	node5.next = NULL;
 	//vector<ListNode*> input;
 	//input.push_back(&node1);
 	//input.push_back(&node3);
-	bool result = solution.hasCycle(&node1);
+	ListNode* result = solution.detectCycle(&node1);
+	//bool result = solution.hasCycle(&node1);
 	//ListNode* result = solution.mergeKLists(input);
 	//ListNode* result = solution.insertionSortList(&node1);
 	//solution.deleteNode(&node1);
