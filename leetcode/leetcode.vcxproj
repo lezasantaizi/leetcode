@@ -149,6 +149,7 @@
     <ClCompile Include="removeElement.cpp" />
     <ClCompile Include="removeElements.cpp" />
     <ClCompile Include="removeNthFromEnd.cpp" />
+    <ClCompile Include="reorderList.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="reverseBetween.cpp" />
     <ClCompile Include="reverseBits.cpp" />
@@ -256,6 +257,7 @@
     <ClInclude Include="removeElement.h" />
     <ClInclude Include="removeElements.h" />
     <ClInclude Include="removeNthFromEnd.h" />
+    <ClInclude Include="reorderList.h" />
     <ClInclude Include="reverse.h" />
     <ClInclude Include="reverseBetween.h" />
     <ClInclude Include="reverseBits.h" />

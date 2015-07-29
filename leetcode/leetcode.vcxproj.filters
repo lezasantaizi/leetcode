@@ -327,6 +327,9 @@
     <ClCompile Include="isPalindrome_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="reorderList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -636,6 +639,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="isPalindrome_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reorderList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
