@@ -99,12 +99,13 @@
 //#include "detectCycle.h"
 //#include "deleteDuplicates2.h"
 //#include "isPalindrome_list.h"
-#include "reorderList.h"
+//#include "reorderList.h"
+#include "uniquePaths.h"
 using namespace std;
 
 int main()
 {
-	Solution103 solution;
+	Solution104 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -127,6 +128,8 @@ int main()
 	//vector<vector<int>> result = solution.combinationSum3(3,9);
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
+
+	int result = solution.uniquePaths(2,2);
 	vector<int> num1;
 	num1.push_back(1);
 	num1.push_back(3);
@@ -225,7 +228,7 @@ int main()
 	node3.next = &node4;
 	node4.next = &node5;
 	node5.next = NULL;
-	solution.reorderList(&node1);
+	//solution.reorderList(&node1);
 	//bool result = solution.isPalindrome(&node1);
 	//ListNode* result = solution.deleteDuplicates(&node1);
 	//vector<ListNode*> input;

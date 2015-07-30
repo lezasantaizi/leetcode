@@ -330,6 +330,9 @@
     <ClCompile Include="reorderList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="uniquePaths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -642,6 +645,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="reorderList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="uniquePaths.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
