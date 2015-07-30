@@ -134,6 +134,7 @@
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="mergeKLists.cpp" />
     <ClCompile Include="minDepth.cpp" />
+    <ClCompile Include="minPathSum.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="myAtoi.cpp" />
     <ClCompile Include="numTrees.cpp" />
@@ -177,6 +178,7 @@
     <ClCompile Include="trailingZeroes.cpp" />
     <ClCompile Include="twoSum.cpp" />
     <ClCompile Include="uniquePaths.cpp" />
+    <ClCompile Include="uniquePathsWithObstacles.cpp" />
     <ClCompile Include="zigzagLevelOrder.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +245,7 @@
     <ClInclude Include="merge.h" />
     <ClInclude Include="mergeKLists.h" />
     <ClInclude Include="minDepth.h" />
+    <ClInclude Include="minPathSum.h" />
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="myAtoi.h" />
     <ClInclude Include="numTrees.h" />
@@ -284,6 +287,7 @@
     <ClInclude Include="trailingZeroes.h" />
     <ClInclude Include="twoSum.h" />
     <ClInclude Include="uniquePaths.h" />
+    <ClInclude Include="uniquePathsWithObstacles.h" />
     <ClInclude Include="zigzagLevelOrder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

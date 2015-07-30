@@ -100,12 +100,14 @@
 //#include "deleteDuplicates2.h"
 //#include "isPalindrome_list.h"
 //#include "reorderList.h"
-#include "uniquePaths.h"
+//#include "uniquePaths.h"
+//#include "uniquePathsWithObstacles.h"
+#include "minPathSum.h"
 using namespace std;
 
 int main()
 {
-	Solution104 solution;
+	Solution106 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -129,7 +131,14 @@ int main()
 	//bool result = solution.isNumber("-2e");
 	//bool result = solution.isPalindrome(121343121);
 
-	int result = solution.uniquePaths(2,2);
+	//int result = solution.uniquePaths(2,2);
+	vector<vector<int>> input(3,vector<int>(3));
+	input[1][1] = 0;
+
+	vector<vector<int>> input2(2,vector<int>(2,1));
+	input2[0][1] = 2;
+	//int result = solution.uniquePathsWithObstacles(input);
+	int result = solution.minPathSum(input2);
 	vector<int> num1;
 	num1.push_back(1);
 	num1.push_back(3);
