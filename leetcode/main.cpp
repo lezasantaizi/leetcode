@@ -103,12 +103,13 @@
 //#include "uniquePaths.h"
 //#include "uniquePathsWithObstacles.h"
 //#include "minPathSum.h"
-#include "minimumTotal.h"
+//#include "minimumTotal.h"
+#include "maxSubArray.h"
 using namespace std;
 
 int main()
 {
-	Solution107 solution;
+	Solution108 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -154,20 +155,22 @@ int main()
 	temp.push_back(8);
 	temp.push_back(3);
 	input.push_back(temp);
-	int result = solution.minimumTotal(input);
+	//int result = solution.minimumTotal(input);
 	//vector<vector<int>> input2(2,vector<int>(2,1));
 	//input2[0][1] = 2;
 	//int result = solution.uniquePathsWithObstacles(input);
 	//int result = solution.minPathSum(input2);
 	vector<int> num1;
+	num1.push_back(-2);
 	num1.push_back(1);
-	num1.push_back(3);
-	num1.push_back(-1);
 	num1.push_back(-3);
-	num1.push_back(5);
-	num1.push_back(3);
-	num1.push_back(6);
-	num1.push_back(7);
+	num1.push_back(4);
+	num1.push_back(-1);
+	num1.push_back(2);
+	num1.push_back(1);
+	num1.push_back(-5);
+	num1.push_back(4);
+	int result = solution.maxSubArray(num1);
 	//vector<int> result = solution.maxSlidingWindow(num1,3);
 	//int result = solution.search(num1,2);
 

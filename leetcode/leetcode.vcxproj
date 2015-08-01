@@ -131,6 +131,7 @@
     <ClCompile Include="maxDepth.cpp" />
     <ClCompile Include="maxPathSum.cpp" />
     <ClCompile Include="maxSlidingWindow.cpp" />
+    <ClCompile Include="maxSubArray.cpp" />
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="mergeKLists.cpp" />
     <ClCompile Include="minDepth.cpp" />
@@ -243,6 +244,7 @@
     <ClInclude Include="maxDepth.h" />
     <ClInclude Include="maxPathSum.h" />
     <ClInclude Include="maxSlidingWindow.h" />
+    <ClInclude Include="maxSubArray.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="mergeKLists.h" />
     <ClInclude Include="minDepth.h" />
