@@ -101,13 +101,14 @@
 //#include "isPalindrome_list.h"
 //#include "reorderList.h"
 //#include "uniquePaths.h"
-#include "uniquePathsWithObstacles.h"
+//#include "uniquePathsWithObstacles.h"
 //#include "minPathSum.h"
+#include "minimumTotal.h"
 using namespace std;
 
 int main()
 {
-	Solution105 solution;
+	Solution107 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -132,12 +133,31 @@ int main()
 	//bool result = solution.isPalindrome(121343121);
 
 	//int result = solution.uniquePaths(2,2);
-	vector<vector<int>> input(3,vector<int>(3));
-	input[1][1] = 1;
-
+	//vector<vector<int>> input(3,vector<int>(3));
+	//input[1][1] = 1;
+	vector<vector<int>> input;
+	vector<int> temp;
+	temp.push_back(2);
+	input.push_back(temp);
+	temp.clear();
+	temp.push_back(3);
+	temp.push_back(4);
+	input.push_back(temp);
+	temp.clear();
+	temp.push_back(6);
+	temp.push_back(5);
+	temp.push_back(7);
+	input.push_back(temp);
+	temp.clear();
+	temp.push_back(4);
+	temp.push_back(1);
+	temp.push_back(8);
+	temp.push_back(3);
+	input.push_back(temp);
+	int result = solution.minimumTotal(input);
 	//vector<vector<int>> input2(2,vector<int>(2,1));
 	//input2[0][1] = 2;
-	int result = solution.uniquePathsWithObstacles(input);
+	//int result = solution.uniquePathsWithObstacles(input);
 	//int result = solution.minPathSum(input2);
 	vector<int> num1;
 	num1.push_back(1);
@@ -208,35 +228,35 @@ int main()
 	//vector<vector<int>> result = solution.threeSum(num);
 	//vector<int> result = solution.twoSum(num,6);	   
 	//int result = solution.rangeBitwiseAnd(5,9);
-	vector<int> temp;
-	temp.push_back(1);
-	temp.push_back(5);
-	temp.push_back(3);
-	temp.push_back(0);
+	//vector<int> temp;
+	//temp.push_back(1);
+	//temp.push_back(5);
+	//temp.push_back(3);
+	//temp.push_back(0);
 
-	vector<vector<int>> matrix;
-	for (int i = 0 ;i<3;i++)
-	{
-		vector<int> temp;
-		for (int j = 0;j<3;j++)
-		{
-			temp.push_back(i*3+j+1);
-		}
-		matrix.push_back(temp);
-	}
+	//vector<vector<int>> matrix;
+	//for (int i = 0 ;i<3;i++)
+	//{
+	//	vector<int> temp;
+	//	for (int j = 0;j<3;j++)
+	//	{
+	//		temp.push_back(i*3+j+1);
+	//	}
+	//	matrix.push_back(temp);
+	//}
 
-	ListNode node1(1);
-	ListNode node2(2);
-	ListNode node3(3);
-	ListNode node4(4);
-	ListNode node5(5);
-	//ListNode node6(6);
+	//ListNode node1(1);
+	//ListNode node2(2);
+	//ListNode node3(3);
+	//ListNode node4(4);
+	//ListNode node5(5);
+	////ListNode node6(6);
 
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = &node4;
-	node4.next = &node5;
-	node5.next = NULL;
+	//node1.next = &node2;
+	//node2.next = &node3;
+	//node3.next = &node4;
+	//node4.next = &node5;
+	//node5.next = NULL;
 	//solution.reorderList(&node1);
 	//bool result = solution.isPalindrome(&node1);
 	//ListNode* result = solution.deleteDuplicates(&node1);

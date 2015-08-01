@@ -134,6 +134,7 @@
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="mergeKLists.cpp" />
     <ClCompile Include="minDepth.cpp" />
+    <ClCompile Include="minimumTotal.cpp" />
     <ClCompile Include="minPathSum.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="myAtoi.cpp" />
@@ -245,6 +246,7 @@
     <ClInclude Include="merge.h" />
     <ClInclude Include="mergeKLists.h" />
     <ClInclude Include="minDepth.h" />
+    <ClInclude Include="minimumTotal.h" />
     <ClInclude Include="minPathSum.h" />
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="myAtoi.h" />
