@@ -2,6 +2,9 @@
 
 int maxSubArrayHelper(vector<int>& nums,int l,int r)
 {
+	if(l == r){
+		return nums[l];
+	}
 	if (l > r)
 		return INT_MIN;
 	int m = (l+r) / 2;

@@ -345,6 +345,9 @@
     <ClCompile Include="maxSubArray.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="maxProduct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -672,6 +675,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="maxSubArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="maxProduct.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
