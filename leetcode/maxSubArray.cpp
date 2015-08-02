@@ -1,9 +1,9 @@
 #include "maxSubArray.h"
 
-int maxSubArrayHelper(vector<int> nums,int l,int r)
+int maxSubArrayHelper(vector<int>& nums,int l,int r)
 {
 	if (l > r)
-		return -2147483647;
+		return INT_MIN;
 	int m = (l+r) / 2;
 
 		int leftMax = 0;
