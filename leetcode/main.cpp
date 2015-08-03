@@ -105,12 +105,13 @@
 //#include "minPathSum.h"
 //#include "minimumTotal.h"
 //#include "maxSubArray.h"
-#include "maxProduct.h"
+//#include "maxProduct.h"
+#include "maxProfit.h"
 using namespace std;
 
 int main()
 {
-	Solution109 solution;
+	Solution110 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -168,10 +169,11 @@ int main()
 	num1.push_back(4);
 	num1.push_back(-1);
 	num1.push_back(3);
+	int result = solution.maxProfit(num1);
 	//num1.push_back(1);
 	//num1.push_back(-5);
 	//num1.push_back(4);
-	int result = solution.maxProduct(num1);
+	//int result = solution.maxProduct(num1);
 	//int result = solution.maxSubArray(num1);
 	//vector<int> result = solution.maxSlidingWindow(num1,3);
 	//int result = solution.search(num1,2);

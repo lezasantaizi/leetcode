@@ -348,6 +348,9 @@
     <ClCompile Include="maxProduct.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="maxProfit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -678,6 +681,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="maxProduct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="maxProfit.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
