@@ -106,12 +106,13 @@
 //#include "minimumTotal.h"
 //#include "maxSubArray.h"
 //#include "maxProduct.h"
-#include "maxProfit.h"
+//#include "maxProfit.h"
+#include "numDecodings.h"
 using namespace std;
 
 int main()
 {
-	Solution110 solution;
+	Solution111 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -138,6 +139,7 @@ int main()
 	//int result = solution.uniquePaths(2,2);
 	//vector<vector<int>> input(3,vector<int>(3));
 	//input[1][1] = 1;
+	int result = solution.numDecodings("12");
 	vector<vector<int>> input;
 	vector<int> temp;
 	temp.push_back(2);
@@ -169,7 +171,7 @@ int main()
 	num1.push_back(4);
 	num1.push_back(-1);
 	num1.push_back(3);
-	int result = solution.maxProfit(num1);
+	//int result = solution.maxProfit(num1);
 	//num1.push_back(1);
 	//num1.push_back(-5);
 	//num1.push_back(4);

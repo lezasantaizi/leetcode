@@ -141,6 +141,7 @@
     <ClCompile Include="minPathSum.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="myAtoi.cpp" />
+    <ClCompile Include="numDecodings.cpp" />
     <ClCompile Include="numTrees.cpp" />
     <ClCompile Include="partition.cpp" />
     <ClCompile Include="pathSum.cpp" />
@@ -256,6 +257,7 @@
     <ClInclude Include="minPathSum.h" />
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="myAtoi.h" />
+    <ClInclude Include="numDecodings.h" />
     <ClInclude Include="numTrees.h" />
     <ClInclude Include="partition.h" />
     <ClInclude Include="pathSum.h" />
