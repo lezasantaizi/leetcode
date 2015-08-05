@@ -107,12 +107,13 @@
 //#include "maxSubArray.h"
 //#include "maxProduct.h"
 //#include "maxProfit.h"
-#include "numDecodings.h"
+//#include "numDecodings.h"
+#include "rob2.h"
 using namespace std;
 
 int main()
 {
-	Solution111 solution;
+	Solution112 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -139,7 +140,8 @@ int main()
 	//int result = solution.uniquePaths(2,2);
 	//vector<vector<int>> input(3,vector<int>(3));
 	//input[1][1] = 1;
-	int result = solution.numDecodings("12");
+	//int result = solution.numDecodings("12");
+
 	vector<vector<int>> input;
 	vector<int> temp;
 	temp.push_back(2);
@@ -165,12 +167,13 @@ int main()
 	//int result = solution.uniquePathsWithObstacles(input);
 	//int result = solution.minPathSum(input2);
 	vector<int> num1;
-	num1.push_back(-2);
 	num1.push_back(1);
-	num1.push_back(0);
-	num1.push_back(4);
-	num1.push_back(-1);
+	num1.push_back(2);
 	num1.push_back(3);
+	num1.push_back(4);
+	num1.push_back(5);
+	//num1.push_back(3);
+	int result = solution.rob(num1);
 	//int result = solution.maxProfit(num1);
 	//num1.push_back(1);
 	//num1.push_back(-5);

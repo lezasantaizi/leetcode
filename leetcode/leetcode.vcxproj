@@ -164,6 +164,7 @@
     <ClCompile Include="longestConsecutive.cpp" />
     <ClCompile Include="rightSideView.cpp" />
     <ClCompile Include="rob.cpp" />
+    <ClCompile Include="rob2.cpp" />
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
     <ClCompile Include="rotateRight.cpp" />
@@ -280,6 +281,7 @@
     <ClInclude Include="longestConsecutive.h" />
     <ClInclude Include="rightSideView.h" />
     <ClInclude Include="rob.h" />
+    <ClInclude Include="rob2.h" />
     <ClInclude Include="romanToInt.h" />
     <ClInclude Include="rotate.h" />
     <ClInclude Include="rotateRight.h" />
