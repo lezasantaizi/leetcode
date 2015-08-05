@@ -108,12 +108,13 @@
 //#include "maxProduct.h"
 //#include "maxProfit.h"
 //#include "numDecodings.h"
-#include "rob2.h"
+//#include "rob2.h"
+#include "maximalRectangle.h"
 using namespace std;
 
 int main()
 {
-	Solution112 solution;
+	Solution113 solution;
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -166,14 +167,40 @@ int main()
 	//input2[0][1] = 2;
 	//int result = solution.uniquePathsWithObstacles(input);
 	//int result = solution.minPathSum(input2);
-	vector<int> num1;
-	num1.push_back(1);
-	num1.push_back(2);
-	num1.push_back(3);
-	num1.push_back(4);
-	num1.push_back(5);
+	//0 0 0 1 0 0 0 
+	//0 0 1 1 1 0 0 
+	//0 1 1 1 1 1 0
+	vector<char> num1;
+	vector<vector<char>> input1;
+	num1.push_back(0);
+	num1.push_back(0);
+	num1.push_back(0);
+	num1.push_back('1');
+	num1.push_back(0);
+	num1.push_back(0);
+	num1.push_back(0);
+	input1.push_back(num1);
+	num1.clear();
+	num1.push_back(0);
+	num1.push_back(0);
+	num1.push_back('1');
+	num1.push_back('1');
+	num1.push_back('1');
+	num1.push_back(0);
+	num1.push_back(0);
+	input1.push_back(num1);
+	num1.clear();
+	num1.push_back(0);
+	num1.push_back('1');
+	num1.push_back('1');
+	num1.push_back('1');
+	num1.push_back('1');
+	num1.push_back('1');
+	num1.push_back(0);
+	input1.push_back(num1);
+	int result = solution.maximalRectangle(input1);
 	//num1.push_back(3);
-	int result = solution.rob(num1);
+	//int result = solution.rob(num1);
 	//int result = solution.maxProfit(num1);
 	//num1.push_back(1);
 	//num1.push_back(-5);

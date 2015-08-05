@@ -129,6 +129,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="maxDepth.cpp" />
+    <ClCompile Include="maximalRectangle.cpp" />
     <ClCompile Include="maxPathSum.cpp" />
     <ClCompile Include="maxProduct.cpp" />
     <ClCompile Include="maxProfit.cpp" />
@@ -246,6 +247,7 @@
     <ClInclude Include="lowestCommonAncestor2.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="maxDepth.h" />
+    <ClInclude Include="maximalRectangle.h" />
     <ClInclude Include="maxPathSum.h" />
     <ClInclude Include="maxProduct.h" />
     <ClInclude Include="maxProfit.h" />

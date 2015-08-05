@@ -357,6 +357,9 @@
     <ClCompile Include="rob2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="maximalRectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countPrimes.h">
@@ -696,6 +699,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="rob2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="maximalRectangle.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
