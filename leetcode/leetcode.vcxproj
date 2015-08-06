@@ -124,6 +124,7 @@
     <ClCompile Include="lengthOfLongestSubstring.cpp" />
     <ClCompile Include="levelOrder.cpp" />
     <ClCompile Include="levelOrderBottom.cpp" />
+    <ClCompile Include="longestValidParentheses.cpp" />
     <ClCompile Include="lowestCommonAncestor.cpp" />
     <ClCompile Include="lowestCommonAncestor2.cpp" />
     <ClCompile Include="main.cpp" />
@@ -243,6 +244,7 @@
     <ClInclude Include="lengthOfLongestSubstring.h" />
     <ClInclude Include="levelOrder.h" />
     <ClInclude Include="levelOrderBottom.h" />
+    <ClInclude Include="longestValidParentheses.h" />
     <ClInclude Include="lowestCommonAncestor.h" />
     <ClInclude Include="lowestCommonAncestor2.h" />
     <ClInclude Include="majorityElement.h" />

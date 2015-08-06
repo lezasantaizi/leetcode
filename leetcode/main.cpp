@@ -109,12 +109,14 @@
 //#include "maxProfit.h"
 //#include "numDecodings.h"
 //#include "rob2.h"
-#include "maximalRectangle.h"
+//#include "maximalRectangle.h"
+#include "longestValidParentheses.h"
 using namespace std;
 
 int main()
 {
-	Solution113 solution;
+	Solution114 solution;
+	int result = solution.longestValidParentheses("()())");
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);
@@ -198,7 +200,7 @@ int main()
 	num1.push_back('1');
 	num1.push_back(0);
 	input1.push_back(num1);
-	int result = solution.maximalRectangle(input1);
+	//int result = solution.maximalRectangle(input1);
 	//num1.push_back(3);
 	//int result = solution.rob(num1);
 	//int result = solution.maxProfit(num1);
