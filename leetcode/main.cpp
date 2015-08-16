@@ -110,13 +110,21 @@
 //#include "numDecodings.h"
 //#include "rob2.h"
 //#include "maximalRectangle.h"
-#include "longestValidParentheses.h"
+//#include "longestValidParentheses.h"
+#include"medianII.h"
 using namespace std;
 
 int main()
 {
-	Solution114 solution;
-	int result = solution.longestValidParentheses("()())");
+	Solution115 solution;
+	vector<int> input2;
+	input2.push_back(1);
+	input2.push_back(2);
+	input2.push_back(3);
+	input2.push_back(4);
+	input2.push_back(5);
+	vector<int> result =solution.medianII(input2);
+	//int result = solution.longestValidParentheses("()())");
 	//solution.push(1);
 	//solution.push(1);
 	//solution.push(2);

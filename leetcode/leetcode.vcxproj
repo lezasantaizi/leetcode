@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -130,17 +130,30 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="maxDepth.cpp" />
-    <ClCompile Include="maximalRectangle.cpp" />
+    <ClCompile Include="maximalRectangle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="maxPathSum.cpp" />
-    <ClCompile Include="maxProduct.cpp" />
-    <ClCompile Include="maxProfit.cpp" />
+    <ClCompile Include="maxProduct.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="maxProfit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="maxSlidingWindow.cpp" />
-    <ClCompile Include="maxSubArray.cpp" />
+    <ClCompile Include="maxSubArray.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="medianII.cpp" />
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="mergeKLists.cpp" />
     <ClCompile Include="minDepth.cpp" />
-    <ClCompile Include="minimumTotal.cpp" />
-    <ClCompile Include="minPathSum.cpp" />
+    <ClCompile Include="minimumTotal.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="minPathSum.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="myAtoi.cpp" />
     <ClCompile Include="numDecodings.cpp" />
@@ -166,7 +179,9 @@
     <ClCompile Include="longestConsecutive.cpp" />
     <ClCompile Include="rightSideView.cpp" />
     <ClCompile Include="rob.cpp" />
-    <ClCompile Include="rob2.cpp" />
+    <ClCompile Include="rob2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="romanToInt.cpp" />
     <ClCompile Include="rotate.cpp" />
     <ClCompile Include="rotateRight.cpp" />
@@ -255,6 +270,7 @@
     <ClInclude Include="maxProfit.h" />
     <ClInclude Include="maxSlidingWindow.h" />
     <ClInclude Include="maxSubArray.h" />
+    <ClInclude Include="medianII.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="mergeKLists.h" />
     <ClInclude Include="minDepth.h" />
